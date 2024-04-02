@@ -51,7 +51,7 @@ class AutoClicker: ObservableObject {
   }
 
   func stopClicking() {
-    print("stopClicking called")
+    // print("stopClicking called")
     DispatchQueue.main.async {
       self.isClicking = false
     }
@@ -64,13 +64,14 @@ class AutoClicker: ObservableObject {
     }
   }
 
-    private func startTimer() {
+  private func startTimer() {
     clickTimer?.cancel()  // Cancel any existing timer
 
     // Initialize CGEvents once
     initializeClickEvents()
 
-    clickTimer = DispatchSource.makeTimerSource(flags: [.strict], queue: DispatchQueue.global(qos: .userInteractive))
+    clickTimer = DispatchSource.makeTimerSource(
+      flags: [.strict], queue: DispatchQueue.global(qos: .userInteractive))
     clickTimer?.schedule(deadline: .now(), repeating: rate, leeway: .milliseconds(1))
     clickTimer?.setEventHandler { [weak self] in
       self?.click()
@@ -80,8 +81,12 @@ class AutoClicker: ObservableObject {
 
   private func initializeClickEvents() {
     let point = CGPoint(x: 0, y: 0)  // Temporary point, will be updated on each click
-    mouseDownEvent = CGEvent(mouseEventSource: eventSource, mouseType: .leftMouseDown, mouseCursorPosition: point, mouseButton: .left)
-    mouseUpEvent = CGEvent(mouseEventSource: eventSource, mouseType: .leftMouseUp, mouseCursorPosition: point, mouseButton: .left)
+    mouseDownEvent = CGEvent(
+      mouseEventSource: eventSource, mouseType: .leftMouseDown, mouseCursorPosition: point,
+      mouseButton: .left)
+    mouseUpEvent = CGEvent(
+      mouseEventSource: eventSource, mouseType: .leftMouseUp, mouseCursorPosition: point,
+      mouseButton: .left)
   }
 
   private func click() {
@@ -100,9 +105,8 @@ class AutoClicker: ObservableObject {
     mouseUpEvent?.post(tap: .cghidEventTap)
   }
 
-
   private func mouseDidMove(event: NSEvent) {
-    print("mouseDidMove called")
+    // print("mouseDidMove called")
     lastMoved = Date()
   }
 }

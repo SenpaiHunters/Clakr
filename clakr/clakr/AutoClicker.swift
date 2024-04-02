@@ -15,6 +15,10 @@ class AutoClicker: ObservableObject {
   private var mouseMoveMonitor: Any?
   var rate: TimeInterval = 1.0
   var stationarySeconds: TimeInterval = 3
+  private let eventSource = CGEventSource(stateID: .hidSystemState)
+  private var screenHeight: CGFloat = NSScreen.main?.frame.height ?? 0
+  private var mouseDownEvent: CGEvent?
+  private var mouseUpEvent: CGEvent?
 
   func startClicking(
     clicksPerSecond: Double, startAfter: TimeInterval, stopAfter: TimeInterval,
@@ -24,7 +28,8 @@ class AutoClicker: ObservableObject {
     self.stationarySeconds = stationaryFor
 
     // Delay the start of clicking by startAfter seconds
-    DispatchQueue.main.asyncAfter(deadline: .now() + startAfter) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + startAfter) { [weak self] in
+      guard let self = self else { return }
       self.isClicking = true
       self.startTimer()
 
@@ -38,8 +43,9 @@ class AutoClicker: ObservableObject {
 
     // Set up mouse move monitor if not already set
     if mouseMoveMonitor == nil {
-      mouseMoveMonitor = NSEvent.addGlobalMonitorForEvents(matching: .mouseMoved) { [weak self] _ in
-        self?.mouseDidMove()
+      mouseMoveMonitor = NSEvent.addGlobalMonitorForEvents(matching: .mouseMoved) {
+        [weak self] event in
+        self?.mouseDidMove(event: event)
       }
     }
   }
@@ -58,58 +64,45 @@ class AutoClicker: ObservableObject {
     }
   }
 
-  private func startTimer() {
+    private func startTimer() {
     clickTimer?.cancel()  // Cancel any existing timer
-    clickTimer = DispatchSource.makeTimerSource()
-    clickTimer?.schedule(deadline: .now(), repeating: rate)
+
+    // Initialize CGEvents once
+    initializeClickEvents()
+
+    clickTimer = DispatchSource.makeTimerSource(flags: [.strict], queue: DispatchQueue.global(qos: .userInteractive))
+    clickTimer?.schedule(deadline: .now(), repeating: rate, leeway: .milliseconds(1))
     clickTimer?.setEventHandler { [weak self] in
       self?.click()
     }
     clickTimer?.resume()
   }
 
+  private func initializeClickEvents() {
+    let point = CGPoint(x: 0, y: 0)  // Temporary point, will be updated on each click
+    mouseDownEvent = CGEvent(mouseEventSource: eventSource, mouseType: .leftMouseDown, mouseCursorPosition: point, mouseButton: .left)
+    mouseUpEvent = CGEvent(mouseEventSource: eventSource, mouseType: .leftMouseUp, mouseCursorPosition: point, mouseButton: .left)
+  }
+
   private func click() {
-    print("click called")
-    guard isClicking, Date().timeIntervalSince(lastMoved) >= stationarySeconds else {
-      print(
-        "Click skipped: isClicking=\(isClicking), timeIntervalSinceLastMoved=\(Date().timeIntervalSince(lastMoved))"
-      )
+    guard isClicking, -lastMoved.timeIntervalSinceNow >= stationarySeconds else {
       return
     }
 
     let mouseLocation = NSEvent.mouseLocation
-    let point = CGPoint(x: mouseLocation.x, y: NSScreen.main!.frame.height - mouseLocation.y)
+    let point = CGPoint(x: mouseLocation.x, y: screenHeight - mouseLocation.y)
 
-    guard
-      let mouseDownEvent = CGEvent(
-        mouseEventSource: nil, mouseType: .leftMouseDown, mouseCursorPosition: point,
-        mouseButton: .left),
-      let mouseUpEvent = CGEvent(
-        mouseEventSource: nil, mouseType: .leftMouseUp, mouseCursorPosition: point,
-        mouseButton: .left)
-    else {
-      print("Failed to create mouse events")
-      return
-    }
+    // Update the location of the existing CGEvents
+    mouseDownEvent?.location = point
+    mouseUpEvent?.location = point
 
-    mouseDownEvent.post(tap: .cghidEventTap)
-    mouseUpEvent.post(tap: .cghidEventTap)
+    mouseDownEvent?.post(tap: .cghidEventTap)
+    mouseUpEvent?.post(tap: .cghidEventTap)
   }
 
-  private func mouseDidMove() {
+
+  private func mouseDidMove(event: NSEvent) {
     print("mouseDidMove called")
     lastMoved = Date()
-    clickTimer?.cancel()
-    clickTimer = nil
-
-    DispatchQueue.main.asyncAfter(deadline: .now() + stationarySeconds) { [weak self] in
-      print("Timer restart check after mouse move")
-      guard let self = self else { return }
-
-      if self.clickTimer == nil {
-        print("Restarting timer")
-        self.startTimer()
-      }
-    }
   }
 }

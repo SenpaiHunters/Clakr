@@ -32,8 +32,8 @@ struct ContentView: View {
       .padding(.top, -5)
     }
     .frame(
-      minWidth: 320, idealWidth: 400, maxWidth: 500, minHeight: 450, idealHeight: 450,
-      maxHeight: 500
+      minWidth: 320, idealWidth: 320, maxWidth: 340, minHeight: 450, idealHeight: 450,
+      maxHeight: 460
     )
     .onReceive(autoClicker.$isClicking) { isClicking = $0 }
   }

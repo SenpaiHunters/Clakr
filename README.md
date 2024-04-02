@@ -11,7 +11,7 @@ clakr is an auto-clicker application for macOS that simulates mouse clicks at a 
 
 ## Usage
 
-To use clakr, adjust the settings to your preference and click the "Start" button. To stop the auto-clicking, press the "Stop" button or use the designated hotkey.
+To use clakr, adjust the settings to your preference and click the "Start" button. To stop the auto-clicking, press the "Stop" button or use the designated hotkey. Or, if you have the **Stationary for (seconds)**, simply shake your mouse/cursor.
 
 ## Installation
 

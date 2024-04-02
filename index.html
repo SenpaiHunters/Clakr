@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Autoclicker Test</title>
+        <style>
+            body {
+                text-align: center;
+                margin-top: 50px;
+                background-color: black;
+                color: aliceblue;
+            }
+
+            #click-counter {
+                font-size: 24px;
+                margin: 20px;
+            }
+
+            #click-me {
+                padding: 10px 20px;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="click-counter">Clicks: 0</div>
+        <button id="click-me">Click Me!</button>
+
+        <script>
+            let count = 0;
+            const counterDisplay = document.getElementById('click-counter');
+            const clickButton = document.getElementById('click-me');
+
+            clickButton.addEventListener('click', () => {
+                count++;
+                counterDisplay.textContent = `Clicks: ${count}`;
+            });
+        </script>
+    </body>
+
+</html>

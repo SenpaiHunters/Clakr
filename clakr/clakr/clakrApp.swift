@@ -10,34 +10,48 @@ import SwiftUI
 
 @main
 struct clakrApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-                .onAppear(perform: configureWindowButtons)
-        }
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
+        .onAppear(perform: configureWindowButtons)
     }
+  }
 
-    private func configureWindowButtons() {
-        if let window = NSApplication.shared.windows.first {
-            window.standardWindowButton(.closeButton)?.isEnabled = true
-            window.standardWindowButton(.miniaturizeButton)?.isEnabled = true
-            window.standardWindowButton(.zoomButton)?.isEnabled = false
-        }
+  // Traffic Lights + Top config
+  private func configureWindowButtons() {
+    guard let window = NSApplication.shared.windows.first else { return }
+
+    window.standardWindowButton(.closeButton)?.isEnabled = true
+    window.standardWindowButton(.miniaturizeButton)?.isEnabled = true
+    window.standardWindowButton(.zoomButton)?.isEnabled = false
+
+    // Hide the title bar but keep the window buttons
+    window.titlebarAppearsTransparent = true
+    window.titleVisibility = .hidden
+
+    // Make the window's title bar part of the content view and ensure the buttons are movable
+    window.styleMask.insert(.fullSizeContentView)
+  }
+
+  private func checkAccessibilityPermissions() {
+    let options =
+      [kAXTrustedCheckOptionPrompt.takeUnretainedValue() as String: true] as CFDictionary
+    guard !AXIsProcessTrustedWithOptions(options) else { return }
+
+    let alert = NSAlert()
+    alert.messageText = "Accessibility Permission Required"
+    alert.informativeText =
+      "Please grant accessibility permissions for clakr to function properly. This is needed to simulate mouse clicks."
+    alert.alertStyle = .critical
+    alert.addButton(withTitle: "Open System Preferences")
+    alert.addButton(withTitle: "Cancel")
+
+    let systemPreferencesURLString =
+      "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility"
+    if alert.runModal() == .alertFirstButtonReturn,
+      let url = URL(string: systemPreferencesURLString)
+    {
+      NSWorkspace.shared.open(url)
     }
-
-    private func checkAccessibilityPermissions() {
-        let options = [kAXTrustedCheckOptionPrompt.takeUnretainedValue() as String: true] as CFDictionary
-        guard !AXIsProcessTrustedWithOptions(options) else { return }
-
-        let alert = NSAlert()
-        alert.messageText = "Accessibility Permission Required"
-        alert.informativeText = "Please grant accessibility permissions for clakr to function properly. This is needed to simulate mouse clicks."
-        alert.alertStyle = .critical
-        alert.addButton(withTitle: "Open System Preferences")
-        alert.addButton(withTitle: "Cancel")
-
-        if alert.runModal() == .alertFirstButtonReturn, let url = URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility") {
-            NSWorkspace.shared.open(url)
-        }
-    }
+  }
 }

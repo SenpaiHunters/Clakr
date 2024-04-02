@@ -21,19 +21,19 @@ struct ContentView: View {
       VisualEffectView(material: .hudWindow, blendingMode: .behindWindow)
         .edgesIgnoringSafeArea(.all)
 
-      VStack(spacing: 18) {
+      VStack(spacing: 20) { 
         headerView
         Divider()
         settingsGroup
         Divider()
         startStopButton
       }
-      .padding(.horizontal, 20)
-      .padding(.vertical, 20)
+      .padding(.horizontal, 10)
+      .padding(.top, -5)
     }
     .frame(
-      minWidth: 320, idealWidth: 400, maxWidth: 500, minHeight: 510, idealHeight: 510,
-      maxHeight: 900
+      minWidth: 320, idealWidth: 400, maxWidth: 500, minHeight: 450, idealHeight: 450,
+      maxHeight: 500
     )
     .onReceive(autoClicker.$isClicking) { isClicking = $0 }
   }
@@ -41,7 +41,7 @@ struct ContentView: View {
   private var headerView: some View {
     Text("Clakr")
       .font(.system(size: 36, weight: .bold))
-      .foregroundColor(.white)
+      .foregroundColor(.accentColor)
   }
 
   private var settingsGroup: some View {
@@ -51,7 +51,6 @@ struct ContentView: View {
       SettingStepper(title: "Stop after (seconds):", value: $stopAfterSeconds)
       SettingStepper(title: "Stationary for (seconds):", value: $stationaryForSeconds)
     }
-    .frame(maxWidth: 300)
   }
 
   private var startStopButton: some View {
@@ -59,17 +58,17 @@ struct ContentView: View {
       Label {
         Text(isClicking ? "Stop" : "Start")
           .fontWeight(.semibold)
-          .font(.title)
+          .font(.title3)
       } icon: {
         Image(systemName: isClicking ? "stop.fill" : "play.fill")
-          .font(.title)
+          .font(.title3)
       }
     }
     .buttonStyle(PrimaryButtonStyle(isClicking: isClicking))
     .accessibilityLabel(isClicking ? "Stop clicking" : "Start clicking")
     .accessibilityHint("Toggles the auto-clicker on or off")
+    .accessibilityAddTraits(.isButton)
   }
-
   private func toggleClicking() {
     isClicking.toggle()
     if isClicking {
@@ -87,8 +86,7 @@ struct ContentView: View {
 
     func makeBody(configuration: Configuration) -> some View {
       configuration.label
-        .padding(.vertical, 20)
-        .padding(.horizontal, 40)
+        .padding()
         .foregroundColor(.white)
         .background(
           LinearGradient(

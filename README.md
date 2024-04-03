@@ -183,6 +183,6 @@ clakr is open-sourced under the MIT License. For more details, refer to the LICE
 
 Test clakr's capabilities using our custom-made website:
 
-[Source code](autoclicker-tests/index.html) for the website can be found there
+[Source code](autoclicker-tests/website/index.html) for the website can be found there
 
 For a full understanding of the test environment and to replicate the performance analysis, visit our [autoclicking test](https://clakr-delta.vercel.app/).

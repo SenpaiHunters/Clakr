@@ -58,7 +58,6 @@ Detailed run data showcasing the consistency and reliability of clakr:
 - Run 19: 14975
 - Run 20: 14987
 
-
 ### Factors Affecting Performance
 
 Several technical aspects can influence the click count:
@@ -99,95 +98,6 @@ clakr is open-sourced under the MIT License. For more details, refer to the LICE
 
 Test clakr's capabilities using our custom-made website:
 
-Source code:
+[Source code](autoclicker-tests/index.html) for the website can be found there
 
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>clakr tester</title>
-    <style>
-        body {
-            background-color: #000000;
-            color: #f0f0f0;
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        #click-area {
-            margin-top: 50px;
-            text-align: center;
-        }
-
-        #click-counter {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        #click-me {
-            padding: 15px 30px;
-            font-size: 1.25rem;
-            background-color: #7c47d2;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        #click-me:hover {
-            background-color: #7632e2;
-        }
-
-        #click-me:active {
-            background-color: #6324c7;
-        }
-
-        @media (max-width: 768px) {
-            #click-counter {
-                font-size: 1.5rem;
-            }
-
-            #click-me {
-                font-size: 1rem;
-                padding: 10px 20px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div id="click-area">
-        <div id="click-counter">Clicks: 0</div>
-        <button id="click-me">Click Me!</button>
-    </div>
-
-    <script>
-        let count = 0;
-        const counterDisplay = document.getElementById('click-counter');
-        const clickButton = document.getElementById('click-me');
-    
-        clickButton.addEventListener('click', () => {
-            count++; // Increment the counter
-        });
-    
-        function updateDisplay() {
-            counterDisplay.textContent = `Clicks: ${count}`;
-            requestAnimationFrame(updateDisplay);
-        }
-        updateDisplay();
-    </script>
-</body>
-</html>
-```
-
-
-For a full understanding of the test environment and to replicate the performance analysis, visit our [testing platform](#).
-
----
+For a full understanding of the test environment and to replicate the performance analysis, visit our [autoclicking test](https://clakr-delta.vercel.app/).

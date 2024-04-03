@@ -1,82 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>clakr tester</title>
-    <style>
-        body {
-            background-color: #000000;
-            color: #f0f0f0;
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
 
-        #click-area {
-            margin-top: 50px;
-            text-align: center;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="icon-128@2x.png" type="image/png" />
+        <!-- Material Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <!-- Font -->
+        <link href="https://github.com/lauridskern/open-runde/blob/main/src/web/OpenRunde-Regular.woff2" as="font"
+            type="font/woff2" crossorigin />
+        <!-- CSS Themes -->
+        <link href="index.css" rel="stylesheet" />
+        <title>clakr tester</title>
+    </head>
 
-        #click-counter {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
+    <body>
+        <div id="click-area">
+            <div id="click-counter">Clicks: 0</div>
+            <button id="click-me">Click Me!</button>
+        </div>
 
-        #click-me {
-            padding: 15px 30px;
-            font-size: 1.25rem;
-            background-color: #7c47d2;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+        <script src="index.js"></script>
+    </body>
 
-        #click-me:hover {
-            background-color: #7632e2;
-        }
-
-        #click-me:active {
-            background-color: #6324c7;
-        }
-
-        @media (max-width: 768px) {
-            #click-counter {
-                font-size: 1.5rem;
-            }
-
-            #click-me {
-                font-size: 1rem;
-                padding: 10px 20px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div id="click-area">
-        <div id="click-counter">Clicks: 0</div>
-        <button id="click-me">Click Me!</button>
-    </div>
-
-    <script>
-        let count = 0;
-        const counterDisplay = document.getElementById('click-counter');
-        const clickButton = document.getElementById('click-me');
-    
-        clickButton.addEventListener('click', () => {
-            count++; // Increment the counter
-        });
-    
-        function updateDisplay() {
-            counterDisplay.textContent = `Clicks: ${count}`;
-            requestAnimationFrame(updateDisplay);
-        }
-        updateDisplay();
-    </script>
-</body>
 </html>

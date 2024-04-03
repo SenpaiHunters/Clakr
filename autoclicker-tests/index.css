@@ -1,14 +1,14 @@
 :root {
-    --background-default: #000000;
-    --text-color-default: #f0f0f0;
+    --background: #000000;
+    --text-color: #f0f0f0;
     --button-bg: #7c47d2;
     --button-bg-hover: #7632e2;
     --button-bg-active: #6324c7;
 }
 
 body {
-    background-color: var(--background-default);
-    color: var(--text-color-default);
+    background-color: var(--background);
+    color: var(--text-color);
     font-family: 'Open Runde', 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -24,11 +24,11 @@ body {
 
 #click-counter {
     font-size: 2rem;
-    margin-bottom: 1.25rem; /* Adjusted for relative sizing */
+    margin-bottom: 1.25rem;
 }
 
 #click-me {
-    padding: 0.9375rem 1.875rem; /* Converted to rem */
+    padding: 0.9375rem 1.875rem;
     font-size: 1.25rem;
     background-color: var(--button-bg);
     border: none;
@@ -53,6 +53,6 @@ body {
 
     #click-me {
         font-size: 1rem;
-        padding: 0.625rem 1.25rem; /* Converted to rem */
+        padding: 0.625rem 1.25rem;
     }
 }

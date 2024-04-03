@@ -13,7 +13,7 @@ clakr is a sophisticated auto-clicker application designed for macOS. It simulat
 
 To verify the performance of clakr, you can use our validator script. Follow these steps:
 
-1. Download the validator script from [here](autoclicker-tests/runcals.js).
+1. Download the validator script from [here](autoclicker-tests/validator/runcals.js).
 2. Ensure you have Node.js installed on your system. If not, download and install it from [Node.js official website](https://nodejs.org/).
 3. Open your command-line interface (CLI).
 4. Change the directory to where the validator script is located using the `cd` command. For example:
@@ -39,7 +39,7 @@ node runcals.js
 
 ### Test Summary
 
--------------------------------------------
+------------------- Clakr Test Summary ------------------------;
 
 **Performance:**
 
@@ -89,7 +89,7 @@ node runcals.js
 - Outlier Clicks: 2
 - Outlier Values: 14798, 14876.0
 
---------------------------------------------------------------
+-------------------------------------------;
 
 <details>
     <summary>Individual Runs</summary>

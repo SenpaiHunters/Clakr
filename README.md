@@ -39,6 +39,7 @@ node runcals.js
 
 ### Test Summary
 
+```sh
 ------------------- Clakr Test Summary ------------------------;
 
 **Performance:**
@@ -90,6 +91,7 @@ node runcals.js
 - Outlier Values: 14798, 14876.0
 
 -------------------------------------------;
+```
 
 <details>
     <summary>Individual Runs</summary>

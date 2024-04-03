@@ -40,57 +40,51 @@ node runcals.js
 ### Test Summary
 
 ```sh
-------------------- Clakr Test Summary ------------------------;
+------------------- Clakr Test Summary ------------------------
 
-**Performance:**
+Performance:
+  Best Run: 15000 clicks
+  Slowest Run: 14798 clicks
+  Average: 14972.44 clicks
+  Median: 14979.50 clicks
+  Range: 202.00 clicks (14798 - 15000)
+  Perfect Result: 15000 clicks
+  Number of times Perfect Result happened: 2
+  Probability of Perfect Result: 2.00%
 
-- Best Run: 15000 clicks
-- Slowest Run: 14798 clicks
-- Average: 14972.44 clicks
-- Median: 14979.50 clicks
-- Range: 202.00 clicks (14798 - 15000)
-- Perfect Result: 15000 clicks
-- Number of times Perfect Result happened: 2
-- Probability of Perfect Result: 2.00%
+Sample Statistics:
+  Sample Size: 100 clicks
+  Test Length: 15 seconds
+  Clicks Per Second: 1000
+  Start after: 3 seconds
+  Stationary for: 2 seconds
+  Sum of All Clicks: 1497244.00 clicks
+  10th Percentile: 14942.00 clicks
+  90th Percentile: 14991.10 clicks
+  Mode: 14988,14989 clicks
 
-**Sample Statistics:**
+Variability:
+  Error Margin: 0.18%
+  Standard Deviation: ±27.20
+  Variance: 740.11
+  Coefficient of Variation: 0.18%
+  Interquartile Range (IQR): 20.00 clicks
+  Standard Error of the Mean (SEM): 2.7205
 
-- Sample Size: 100 clicks
-- Test Length: 15 seconds
-- Clicks Per Second: 1000
-- Start after: 3 seconds
-- Stationary for: 2 seconds
-- Sum of All Clicks: 1497244.00 clicks
-- 10th Percentile: 14942.00 clicks
-- 90th Percentile: 14991.10 clicks
-- Mode: 14988,14989 clicks
+Distribution Shape:
+  Skewness: -3.5104
+  Kurtosis: 17.0360
 
-**Variability:**
+Confidence Intervals:
+  95%: 14967.11 - 14977.77
+  99%: 14965.43 - 14979.45
 
-- Error Margin: 0.18%
-- Standard Deviation: ±27.20
-- Variance: 740.11
-- Coefficient of Variation: 0.18%
-- Interquartile Range (IQR): 20.00 clicks
-- Standard Error of the Mean (SEM): 2.7205
+Outliers:
+  Threshold: 3 standard deviations
+  Outlier Clicks: 2
+  Outlier Values: 14798, 14876.0
 
-**Distribution Shape:**
-
-- Skewness: -3.5104
-- Kurtosis: 17.0360
-
-**Confidence Intervals:**
-
-- 95%: 14967.11 - 14977.77
-- 99%: 14965.43 - 14979.45
-
-**Outliers:**
-
-- Threshold: 3 standard deviations
-- Outlier Clicks: 2
-- Outlier Values: 14798, 14876.0
-
--------------------------------------------;
+--------------------------------------------------------------
 ```
 
 <details>

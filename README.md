@@ -1,39 +1,69 @@
+<div align="center">
+
 # clakr
 
-clakr is a sophisticated auto-clicker application designed for macOS. It simulates mouse clicks at user-defined rates, offering a high degree of customization for automated tasks.
+![clakr Banner](assets/clakr-banner.png)
 
-## Key Features
+A sophisticated auto-clicker for macOS, clakr offers customizable automation for a variety of tasks, from office work to gaming.
 
-- **Configurable Click Rate**: Define the number of clicks per second.
-- **Delayed Start**: Initiate clicking after a set period.
-- **Automatic Stop**: Cease clicking after a specified duration.
-- **Stationary Detection**: Begin clicking only when the mouse has been still for a defined time.
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
+[![Release](https://img.shields.io/github/release/senpaihunters/clakr.svg)](https://github.com/senpaihunters/clakr/releases)
+[![Issues](https://img.shields.io/github/issues/senpaihunters/clakr.svg)](https://github.com/senpaihunters/clakr/issues)
 
-## Performance Analysis
+</div>
 
-To verify the performance of clakr, you can use our validator script. Follow these steps:
+## Features
 
-1. Download the validator script from [here](autoclicker-tests/validator/runcals.js).
-2. Ensure you have Node.js installed on your system. If not, download and install it from [Node.js official website](https://nodejs.org/).
-3. Open your command-line interface (CLI).
-4. Change the directory to where the validator script is located using the `cd` command. For example:
+- **Configurable Click Rate**: Customize clicks per second.
+- **Delayed Start**: Schedule the start of clicking.
+- **Automatic Stop**: Set a timer to stop clicking.
+- **Stationary Detection**: Clicks occur only when the mouse is still.
+
+## Getting Started
+
+### Prerequisites
+
+- macOS 12 or later
+
+### Installation
+
+1. Download the latest version from the [Releases](https://github.com/senpaihunters/clakr/releases) page.
+2. Drag the app to your Applications folder.
+3. Due to the lack of a code-signing certificate, right-click and select "Open" if you encounter any warnings.
+
+### Usage
+
+1. Launch clakr.
+2. Configure your desired settings.
+3. Click "Start" to initiate auto-clicking.
+4. Press "Stop" or allow the auto-stop timer to end the session.
+
+## Performance Validation
+
+Ensure clakr meets your needs with our validator script.
+
+### Steps
+
+1. Download the script from [here](autoclicker-tests/validator/runcals.js).
+2. Install `Node.js` and `jstat`:
+
+```sh
+brew install node
+npm install jstat
+```
+
+3. Navigate to the script directory:
 
 ```sh
 cd path/to/autoclicker-tests
 ```
 
-5. Install the `jstat` package, which is required by the validator, by running:
-
-```sh
-npm install jstat
-```
-
-6. Open the `runcals.js` file in a text editor and enter the test values and parameters as needed.
-7. Execute the validator script with Node.js by running:
+4. Run the script:
 
 ```sh
 node runcals.js
 ```
+> Make sure you put in your test results you've gotten from Clakr into the test section, it will calculate the results and data itself
 
 > Replace `runcals.js` with the filename if you have renamed the validator script.
 
@@ -158,31 +188,23 @@ Several technical aspects can influence the click count:
 9. **Interrupts and Context Switching**
 10. **Event Processing**
 
-## Usage
-
-To start using clakr:
-
-1. Adjust the settings to your preference.
-2. Click the "Start" button to initiate auto-clicking.
-3. To stop, press the "Stop" button or the designated hotkey.
-4. For the **Stationary for (seconds)** feature, simply move the mouse to cease clicking.
-
-## Installation
-
-Download the latest release from the GitHub repository and execute the application on your macOS device.
-
 ## Contributing
 
-Your contributions are invaluable to clakr's growth. Feel free to submit pull requests or report issues for enhancements and bug fixes.
+We welcome contributions! Please feel free to submit pull requests or create issues for any bugs or enhancements.
+
+## Support
+
+If you need help or want to discuss clakr, check out our [Issues](https://github.com/senpaihunters/clakr/issues) page.
 
 ## License
 
-clakr is open-sourced under the MIT License. For more details, refer to the LICENSE file.
+clakr is open-sourced under the MIT License. See the [LICENSE](LICENSE.md) file for more details.
 
-### Validate Performance
+## Explore More
 
-Test clakr's capabilities using our custom-made website:
+- [Autoclicking Test Site](https://clakr-delta.vercel.app/)
+- [Validator Source Code](autoclicker-tests/website/index.html)
 
-[Source code](autoclicker-tests/website/index.html) for the website can be found there
+---
 
-For a full understanding of the test environment and to replicate the performance analysis, visit our [autoclicking test](https://clakr-delta.vercel.app/).
+© 2024 clakr. All rights reserved. Available exclusively for macOS.

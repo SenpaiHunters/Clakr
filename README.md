@@ -265,6 +265,9 @@ clakr is open-sourced under the MIT License. See the [LICENSE](LICENSE.md) file 
 - **Q: Do you plan on supporting any lower macOS version?**
   - A: No, macOS 12 is the lowest i plan to support, however, you may be able to build it for lower.
 
+- **Q: Is Clakr available through Homebrew?**
+  - A: Currently, Clakr is not available as a Homebrew cask. The project has not yet met the criteria for inclusion in the main Homebrew repository. However, adding Clakr to Homebrew is on our roadmap. If you're experienced with creating Homebrew casks and would like to contribute, we welcome pull requests or direct guidance on this matter! If you require anything for us, feel free to send me a message.
+
 </details>
 
 ---

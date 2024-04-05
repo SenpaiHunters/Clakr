@@ -10,12 +10,14 @@ Clakr is an auto-clicker application developed in Swift, focusing on high-speed 
 [![Latest Release](https://img.shields.io/github/release/senpaihunters/clakr.svg)](https://github.com/senpaihunters/clakr/releases)
 [![Open Issues](https://img.shields.io/github/issues/senpaihunters/clakr.svg)](https://github.com/senpaihunters/clakr/issues)
 
-<div align="center">
+<div>
   <video width="520" height="440" controls>
     <source src="assets/clakr-web.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
+
+
 ![clakr Banner](assets/clakr.gif)
 
 </div>

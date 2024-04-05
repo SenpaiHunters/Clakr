@@ -56,8 +56,9 @@ brew install node
 npm install jstat
 ```
 
-> [!WARNING]
-> If you do not have brew installed you can install it [here](https://brew.sh)
+> [!IMPORTANT]
+> If you do not have brew installed you can install it [here](https://brew.sh).
+
 
 3. Navigate to the script directory:
 
@@ -231,6 +232,9 @@ Test from gh docs
 
 > [!IMPORTANT]
 > Key information users need to know to achieve their goal.
+
+> [!IMPORTANT]
+> If you do not have brew installed you can install it [here](https://brew.sh).
 
 > [!WARNING]
 > Urgent info that needs immediate user attention to avoid problems.

@@ -28,7 +28,7 @@ Clakr is an auto-clicker application developed in Swift, focusing on high-speed 
 
 - macOS version 12.0 or newer.
 
-> [!NOTICE]
+> [!NOTE]
 > Clakr may look different compared to the picture above on macOS 12, the picture is from 14.2
 
 ### Installation Steps

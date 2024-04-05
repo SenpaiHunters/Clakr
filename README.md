@@ -1,8 +1,6 @@
 <div align="center">
 
-![app icon](assets/icon-128@2x.png)
-
-# Clakr for macOS
+# Clakr
 
 Clakr is an auto-clicker application developed in Swift, focusing on high-speed automated mouse clicking. It has undergone testing across different tasks using intervals of 15 seconds to ensure performance consistency.
 

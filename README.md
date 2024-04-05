@@ -218,3 +218,22 @@ clakr is open-sourced under the MIT License. See the [LICENSE](LICENSE.md) file 
 ---
 
 © 2024 clakr. All rights reserved. Available exclusively for macOS.
+
+---
+
+Test from gh docs
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.

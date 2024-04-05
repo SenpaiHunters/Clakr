@@ -22,52 +22,48 @@ const testParams = {
   stationaryFor: 2, // Time to remain stationary in seconds [DEFAULT: 2]
 };
 
+// Don't touch these ones now
 const sampleSize = clicks.length;
-const sumClicks = jStat.sum(clicks);
-const average = sumClicks / sampleSize;
-const stdDev = jStat.stdev(clicks, true);
 const perfectResult = testParams.duration * testParams.clicksPerSecond;
+let sumClicks = 0, sumOfSquares = 0, perfectCount = 0, bestRun = clicks[0], lowestRun = clicks[0];
+let outliers = [];
 
+clicks.forEach(click => {
+  sumClicks += click;
+  sumOfSquares += click * click;
+  bestRun = Math.max(bestRun, click);
+  lowestRun = Math.min(lowestRun, click);
+  if (click === perfectResult) perfectCount++;
+});
+
+const average = sumClicks / sampleSize;
+const variance = sumOfSquares / sampleSize - average * average;
+const stdDev = Math.sqrt(variance);
+const outlierThreshold = 3 * stdDev;
+
+clicks.forEach(click => {
+  if (Math.abs(click - average) > outlierThreshold) outliers.push(click);
+});
+
+const zScores = [jStat.normal.inv(0.975, 0, 1), jStat.normal.inv(0.995, 0, 1)];
+const marginOfErrors = zScores.map(z => z * stdDev / Math.sqrt(sampleSize));
+const quartiles = jStat.quartiles(clicks);
 const stats = {
-  bestRun: jStat.max(clicks),
-  lowestRun: jStat.min(clicks),
-  average: average,
-  medianClicks: jStat.median(clicks),
-  rangeClicks: jStat.range(clicks),
-  quartiles: jStat.quartiles(clicks),
-  iqr: jStat.quartiles(clicks)[2] - jStat.quartiles(clicks)[0],
-  perfectResult: perfectResult,
-  sem: stdDev / Math.sqrt(sampleSize),
-  percentile10th: jStat.percentile(clicks, 0.1),
-  percentile90th: jStat.percentile(clicks, 0.9),
-  variance: jStat.variance(clicks, true),
-  mode: jStat.mode(clicks),
-  skewness: jStat.skewness(clicks),
-  kurtosis: jStat.kurtosis(clicks),
-  outlierThreshold: 3,
-  perfectCount: clicks.filter(click => click === perfectResult).length,
-  outliers: clicks.filter(click => Math.abs(click - average) > 3 * stdDev)
+  sumClicks, perfectCount, bestRun, lowestRun, average, medianClicks: quartiles[1],
+  rangeClicks: bestRun - lowestRun, quartiles, iqr: quartiles[2] - quartiles[0],
+  perfectResult, sem: stdDev / Math.sqrt(sampleSize),
+  percentile10th: jStat.percentile(clicks, 0.1), percentile90th: jStat.percentile(clicks, 0.9),
+  variance, mode: jStat.mode(clicks), skewness: jStat.skewness(clicks),
+  kurtosis: jStat.kurtosis(clicks), outlierThreshold: 3, outliers,
+  probabilityOfPerfect: perfectCount / sampleSize, errorMargin: (stdDev / average) * 100,
+  confidence95: [average - marginOfErrors[0], average + marginOfErrors[0]],
+  confidence99: [average - marginOfErrors[1], average + marginOfErrors[1]]
 };
 
-stats.probabilityOfPerfect = stats.perfectCount / sampleSize;
-stats.errorMargin = (stdDev / average) * 100;
-stats.confidence95 = confidenceInterval(0.95, average, stdDev, sampleSize);
-stats.confidence99 = confidenceInterval(0.99, average, stdDev, sampleSize);
+function generateReport(stats, testParams) {
+  const formatter = (num, digits = 2) => num.toFixed(digits);
+  const formattedClicks = clicks.map((click, index) => `- Run ${index + 1}: ${click}`).join('\n');
 
-function confidenceInterval(confidenceLevel, mean, standardDeviation, size) {
-  const z = jStat.normal.inv((1 + confidenceLevel) / 2, 0, 1);
-  const marginOfError = z * standardDeviation / Math.sqrt(size);
-  return [mean - marginOfError, mean + marginOfError];
-}
-
-function toFixed(num, digits = 2) {
-  return num.toFixed(digits);
-}
-
-// Output results
-console.log(generateReport(stats, testParams, toFixed));
-
-function generateReport(stats, testParams, formatter) {
   return `
 ------------------- Clakr Test Summary ------------------------
 
@@ -87,7 +83,7 @@ Sample Statistics:
   Clicks Per Second: ${testParams.clicksPerSecond}
   Start after: ${testParams.startAfter} seconds
   Stationary for: ${testParams.stationaryFor} seconds
-  Sum of All Clicks: ${formatter(sumClicks)} clicks
+  Sum of All Clicks: ${formatter(stats.sumClicks)} clicks
   10th Percentile: ${formatter(stats.percentile10th)} clicks
   90th Percentile: ${formatter(stats.percentile90th)} clicks
   Mode: ${stats.mode} clicks
@@ -113,6 +109,11 @@ Outliers:
   Outlier Clicks: ${stats.outliers.length}
   Outlier Values: ${stats.outliers.map(formatter).join(', ')}
 
+Runs (Formatted):
+${formattedClicks}
+
 --------------------------------------------------------------
 `.trim();
 }
+
+console.log(generateReport(stats, testParams));

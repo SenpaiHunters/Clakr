@@ -13,4 +13,4 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: "Thank you for submitting an issue, I will be right on it!"
-        pr-message: "Thank you for adding to SpotOn, I hope you're enjoying the journey with me!"
+        pr-message: "Thank you for adding to Clakr, I hope you're enjoying the journey with me!"

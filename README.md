@@ -99,7 +99,7 @@ Performance:
   Best Run: 15000 clicks
   Slowest Run: 14798 clicks
   Average: 14972.44 clicks
-  Median: 14979.50 clicks
+  Median: 14979.00 clicks
   Range: 202.00 clicks (14798 - 15000)
   Perfect Result: 15000 clicks
   Number of times Perfect Result happened: 2
@@ -118,19 +118,19 @@ Sample Statistics:
 
 Variability:
   Error Margin: 0.18%
-  Standard Deviation: ±27.20
-  Variance: 740.11
+  Standard Deviation: ±27.07
+  Variance: 732.71
   Coefficient of Variation: 0.18%
   Interquartile Range (IQR): 20.00 clicks
-  Standard Error of the Mean (SEM): 2.7205
+  Standard Error of the Mean (SEM): 2.7069
 
 Distribution Shape:
   Skewness: -3.5104
   Kurtosis: 17.0360
 
 Confidence Intervals:
-  95%: 14967.11 - 14977.77
-  99%: 14965.43 - 14979.45
+  95%: 14967.13 - 14977.75
+  99%: 14965.47 - 14979.41
 
 Outliers:
   Threshold: 3 standard deviations
@@ -193,6 +193,56 @@ Outliers:
 - Run 48: 14985
 - Run 49: 14974
 - Run 50: 14988
+- Run 51: 14943
+- Run 52: 14936
+- Run 53: 14980
+- Run 54: 14984
+- Run 55: 14971
+- Run 56: 14965
+- Run 57: 14965
+- Run 58: 14957
+- Run 59: 14957
+- Run 60: 14937
+- Run 61: 14980
+- Run 62: 14962
+- Run 63: 14945
+- Run 64: 14968
+- Run 65: 14942
+- Run 66: 14989
+- Run 67: 14987
+- Run 68: 14989
+- Run 69: 15000
+- Run 70: 14798
+- Run 71: 14981
+- Run 72: 14988
+- Run 73: 14964
+- Run 74: 14992
+- Run 75: 14942
+- Run 76: 14893
+- Run 77: 14876
+- Run 78: 15000
+- Run 79: 14972
+- Run 80: 14985
+- Run 81: 14973
+- Run 82: 14977
+- Run 83: 14960
+- Run 84: 14956
+- Run 85: 14999
+- Run 86: 14993
+- Run 87: 14988
+- Run 88: 14976
+- Run 89: 14979
+- Run 90: 14974
+- Run 91: 14981
+- Run 92: 14980
+- Run 93: 14976
+- Run 94: 14990
+- Run 95: 14992
+- Run 96: 14987
+- Run 97: 14989
+- Run 98: 14958
+- Run 99: 14988
+- Run 100: 14995
 
 </details>
 
@@ -237,7 +287,7 @@ clakr is open-sourced under the MIT License. See the [LICENSE](LICENSE.md) file 
 
 ## Acknowledgments
 
-- [KawaiiFumiko002](https://www.reddit.com/user/Alex20041509/) - App icon creater ❤️
+- [KawaiiFumiko002](https://www.reddit.com/user/Alex20041509/) - App icon creater
 
 ## Explore More
 

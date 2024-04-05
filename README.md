@@ -235,6 +235,10 @@ If you need help or want to discuss clakr, check out our [Issues](https://github
 
 clakr is open-sourced under the MIT License. See the [LICENSE](LICENSE.md) file for more details.
 
+## Acknowledgments
+
+- [KawaiiFumiko002](https://www.reddit.com/user/Alex20041509/) - App icon creater ❤️
+
 ## Explore More
 
 - [Autoclicking Test Site](https://clakr-delta.vercel.app/)

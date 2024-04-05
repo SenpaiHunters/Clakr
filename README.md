@@ -266,4 +266,4 @@ clakr is open-sourced under the MIT License. See the [LICENSE](LICENSE.md) file 
 
 ---
 
-© 2024 clakr. All rights reserved. Available exclusively for macOS.
+© 2024 clakr. All rights reserved.

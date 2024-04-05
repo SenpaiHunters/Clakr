@@ -43,6 +43,10 @@ Clakr is an auto-clicker application developed in Swift, focusing on high-speed 
 
 ## Performance Insights
 
+> [!IMPORTANT]
+> This requires brew to be installed
+> If you do not have brew installed you can install it [here](https://brew.sh).
+
 <details>
 <summary>Validation Results (Click to Expand)</summary>
 
@@ -55,10 +59,6 @@ To ensure Clakr's performance, follow these steps:
 brew install node
 npm install jstat
 ```
-
-> [!IMPORTANT]
-> If you do not have brew installed you can install it [here](https://brew.sh).
-
 
 3. Navigate to the script directory:
 

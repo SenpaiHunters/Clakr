@@ -15,9 +15,9 @@ Clakr is an auto-clicker application developed in Swift, focusing on high-speed 
 
 > [!NOTE]
 >
-> The website used was my [auto clicker validator](https://clakr-delta.vercel.app), you can view the [Source code here](autoclicker-tests/website)
+> The website used for validation is my [auto clicker validator](https://clakr-delta.vercel.app). You can view the [source code here](autoclicker-tests/website).
 >
-> If you'd like an improved version, check the [MP4](/assets/clakr-web.mp4)
+> For a higher quality demonstration, you can download the [MP4 video](/assets/clakr-web.mp4). Please note that GitHub does not natively display MP4 files, so you will need to download and view it locally.
 
 > [!CAUTION]
 > Please be aware that by using Clakr, you accept full responsibility for any consequences, such as bans or penalties from software or services that prohibit the use of auto-clickers.

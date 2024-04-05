@@ -1,57 +1,60 @@
 <div align="center">
 
-# clakr
-
 ![clakr Banner](assets/clakr-banner.png)
 
-Clakr is an auto-clicker application developed in Swift, focusing on high-speed automated mouse clicking. It has undergone testing across different tasks using intervals of 15 seconds to ensure performance consistency. Please be aware that by using Clakr, you accept full responsibility for any consequences, such as bans or penalties from software or services that prohibit the use of auto-clickers.
+# Clakr
 
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
-[![Release](https://img.shields.io/github/release/senpaihunters/clakr.svg)](https://github.com/senpaihunters/clakr/releases)
-[![Issues](https://img.shields.io/github/issues/senpaihunters/clakr.svg)](https://github.com/senpaihunters/clakr/issues)
+An advanced auto-clicker for macOS, Clakr offers high-speed, automated mouse clicking with a suite of customizable features. Designed for efficiency and tested for consistency, Clakr is the tool of choice for users needing reliable automation. Use responsibly, as Clakr's use may contravene certain software policies.
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
+[![Latest Release](https://img.shields.io/github/release/senpaihunters/clakr.svg)](https://github.com/senpaihunters/clakr/releases)
+[![Open Issues](https://img.shields.io/github/issues/senpaihunters/clakr.svg)](https://github.com/senpaihunters/clakr/issues)
 
 </div>
 
 ## Features
 
-- **Configurable Click Rate**: Customize clicks per second.
-- **Delayed Start**: Schedule the start of clicking.
-- **Automatic Stop**: Set a timer to stop clicking.
-- **Stationary Detection**: Clicks occur only when the mouse is still.
+- **Custom Click Rates**: Define your clicks per second.
+- **Start Delay**: Plan when the clicking begins.
+- **Auto-Stop Function**: Automate the end of your clicking session.
+- **Motion Detection**: Only clicks when the mouse is stationary.
 
-## Getting Started
+## Quick Start
 
-### Prerequisites
+### Requirements
 
-- macOS 12 or later
+- macOS version 12.0 or newer.
 
-### Installation
+### Installation Steps
 
-1. Download the latest version from the [Releases](https://github.com/senpaihunters/clakr/releases) page.
-2. Drag the app to your Applications folder.
-3. Due to the lack of a code-signing certificate, right-click and select "Open" if you encounter any warnings.
+1. Grab the latest release from the [Releases page](https://github.com/senpaihunters/clakr/releases).
+2. Move the application to your Applications folder.
+3. If prompted about an unsigned application, right-click and choose "Open".
 
-### Usage
+### How to Use
 
-1. Launch clakr.
-2. Configure your desired settings.
-3. Click "Start" to initiate auto-clicking.
-4. Press "Stop" or allow the auto-stop timer to end the session.
+1. Open Clakr.
+2. Set your preferences.
+3. Hit "Start" to begin clicking.
+4. Stop manually or let the timer do it for you.
 
-## Performance Validation
+## Performance Insights
 
 <details>
-    <summary>Click here to view results</summary>
+<summary>Validation Results (Click to Expand)</summary>
 
-### Steps
+To ensure Clakr's performance, follow these steps:
 
-1. Download the script from [here](autoclicker-tests/validator/runcals.js).
-2. Install `Node.js` and `jstat`:
+1. Get the validation script [here](autoclicker-tests/validator/runcals.js).
+2. Install prerequisites:
 
 ```sh
 brew install node
 npm install jstat
 ```
+
+> [NOTICE]
+> If you do not have brew installed you can install it [here](https://brew.sh)
 
 3. Navigate to the script directory:
 
@@ -64,11 +67,12 @@ cd path/to/autoclicker-tests
 ```sh
 node runcals.js
 ```
-> Make sure you put in your test results you've gotten from Clakr into the test section, it will calculate the results and data itself
 
-> Replace `runcals.js` with the filename if you have renamed the validator script.
+> Input your Clakr test results in the script for automatic analysis.
 
-### Test Summary
+> If you've renamed `runcals.js`, adjust the command accordingly.
+
+#### Performance Summary
 
 ```sh
 ------------------- Clakr Test Summary ------------------------

@@ -1,6 +1,6 @@
 <div align="center">
 
-![clakr Banner](assets/clakr-banner.png)
+<!-- ![clakr Banner](assets/clakr-banner.png) -->
 
 # Clakr
 
@@ -9,6 +9,9 @@ Clakr is an auto-clicker application developed in Swift, focusing on high-speed 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 [![Latest Release](https://img.shields.io/github/release/senpaihunters/clakr.svg)](https://github.com/senpaihunters/clakr/releases)
 [![Open Issues](https://img.shields.io/github/issues/senpaihunters/clakr.svg)](https://github.com/senpaihunters/clakr/issues)
+
+![clakr Banner](assets/clakr-web.mp4)
+![clakr Banner](assets/clakr.gif)
 
 </div>
 

@@ -44,7 +44,7 @@ Clakr is an auto-clicker application developed in Swift, focusing on high-speed 
 ## Performance Insights
 
 > [!IMPORTANT]
-> This requires brew to be installed
+> This requires brew to be installed.
 > If you do not have brew installed you can install it [here](https://brew.sh).
 
 <details>
@@ -199,6 +199,16 @@ Several technical aspects can influence the click count:
 
 </details>
 
+## Troubleshooting Guide
+
+If you encounter issues while using Clakr, here are some common problems and their solutions:
+
+- **Application won't start**: Ensure that you have the required macOS version and that you have followed the installation steps correctly. If the issue persists, try restarting your computer, if it further does not work, submit an issue on our [Issues page](https://github.com/senpaihunters/clakr/issues).
+
+- **Clicks are not registering**: Check if Clakr has the accessibilty permissions in your system settings and that no other software is interfering with its operation.
+
+If you have further issues, submit an issue on our [Issues page](https://github.com/senpaihunters/clakr/issues).
+
 ## Contributing
 
 We welcome contributions! Please feel free to submit pull requests or create issues for any bugs or enhancements.
@@ -216,32 +226,25 @@ clakr is open-sourced under the MIT License. See the [LICENSE](LICENSE.md) file 
 - [Autoclicking Test Site](https://clakr-delta.vercel.app/)
 - [Validator Source Code](autoclicker-tests/website/index.html)
 
+## Frequently Asked Questions (FAQs)
+
+<details>
+<summary>Click to Expand</summary>
+
+- **Q: Can I use Clakr for gaming?**
+  - A: Yes, but be aware of the game's terms of service regarding auto-clickers.
+
+- **Q: Does Clakr work on non-macOS systems?**
+  - A: Currently, Clakr is only available for macOS version 12.0 or newer.
+
+- **Q: How can I contribute to the development of Clakr?**
+  - A: Check out our [Contributing](#contributing) section for guidelines on how to contribute.
+
+- **Q: How much system resources does Clakr use?**
+  - A: About 33mb of RAM when open, and depending on how many clicks per second you define, 10% of your CPU whilst activated.
+
+</details>
+
 ---
 
 © 2024 clakr. All rights reserved. Available exclusively for macOS.
-
----
-
-Test from gh docs
-
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
-
-> [!TIP]
-> Helpful advice for doing things better or more easily.
-
-> [!IMPORTANT]
-> Key information users need to know to achieve their goal.
-
-> [!IMPORTANT]
-> If you do not have brew installed you can install it [here](https://brew.sh).
-
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
-
-
-> [!CAUTION]
-> Please be aware that by using Clakr, you accept full responsibility for any consequences, such as bans or penalties from software or services that prohibit the use of auto-clickers.

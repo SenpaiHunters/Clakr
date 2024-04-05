@@ -28,6 +28,9 @@ Clakr is an auto-clicker application developed in Swift, focusing on high-speed 
 
 - macOS version 12.0 or newer.
 
+> [!NOTICE]
+> Clakr may look different compared to the picture above on macOS 12, the picture is from 14.2
+
 ### Installation Steps
 
 1. Grab the latest release from the [Releases page](https://github.com/senpaihunters/clakr/releases).
@@ -242,6 +245,15 @@ clakr is open-sourced under the MIT License. See the [LICENSE](LICENSE.md) file 
 
 - **Q: How much system resources does Clakr use?**
   - A: About 33mb of RAM when open, and depending on how many clicks per second you define, 10% of your CPU whilst activated.
+
+- **Q: Is Clakr a menu bar app?**
+  - A: Currently, no Clakr is only an app without a menu bar applicate, this may change later, but as of now, its pretty basic.
+
+- **Q: Does Clakr support Hotkeys?**
+  - A: Not yet, but i may add hotkey support in a later release.
+
+- **Q: Do you plan on supporting any lower macOS version?**
+  - A: No, macOS 12 is the lowest i plan to support, however, you may be able to build it for lower.
 
 </details>
 

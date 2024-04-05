@@ -25,6 +25,7 @@ Clakr is an auto-clicker application developed in Swift, focusing on high-speed 
 > Please be aware that by using Clakr, you accept full responsibility for any consequences, such as bans or penalties from software or services that prohibit the use of auto-clickers.
 
 ### Activity
+
 ![Activity](https://repobeats.axiom.co/api/embed/546eacfe73cf9c90c7f2b0056399fa6bc5cbacbc.svg "analytics image")
 
 ## Features

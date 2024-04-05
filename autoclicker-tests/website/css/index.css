@@ -28,7 +28,7 @@ body {
 }
 
 #click-me {
-    padding: 0.9375rem 1.875rem;
+    padding: 1rem 2rem;
     font-size: 1.25rem;
     background-color: var(--button-bg);
     border: none;

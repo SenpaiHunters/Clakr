@@ -40,7 +40,8 @@ Clakr is an auto-clicker application developed in Swift, focusing on high-speed 
 
 ## Performance Validation
 
-Ensure clakr meets your needs with our validator script.
+<details>
+    <summary>Click here to view results</summary>
 
 ### Steps
 
@@ -187,6 +188,8 @@ Several technical aspects can influence the click count:
 8. **Precision of Floating-Point Arithmetic**
 9. **Interrupts and Context Switching**
 10. **Event Processing**
+
+</details>
 
 ## Contributing
 

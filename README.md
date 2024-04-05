@@ -7,16 +7,11 @@ Clakr is an auto-clicker application developed in Swift, focusing on high-speed 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 [![Latest Release](https://img.shields.io/github/release/senpaihunters/clakr.svg)](https://github.com/senpaihunters/clakr/releases)
 [![Open Issues](https://img.shields.io/github/issues/senpaihunters/clakr.svg)](https://github.com/senpaihunters/clakr/issues)
+[![Build Status](https://img.shields.io/travis/senpaihunters/clakr/master.svg)](https://travis-ci.org/senpaihunters/clakr)
 
 ![clakr Banner](assets/clakr.gif)
 
 </div>
-
-
-> [!NOTE]
-> If you'd like an improved version, check the [MP4](/assets/clakr-web.mp4)
-
-
 
 > [!CAUTION]
 > Please be aware that by using Clakr, you accept full responsibility for any consequences, such as bans or penalties from software or services that prohibit the use of auto-clickers.

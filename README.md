@@ -237,3 +237,7 @@ Test from gh docs
 
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
+
+
+> [!CAUTION]
+> Please be aware that by using Clakr, you accept full responsibility for any consequences, such as bans or penalties from software or services that prohibit the use of auto-clickers.

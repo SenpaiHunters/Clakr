@@ -4,7 +4,10 @@
 
 # Clakr
 
-An advanced auto-clicker for macOS, Clakr offers high-speed, automated mouse clicking with a suite of customizable features. Designed for efficiency and tested for consistency, Clakr is the tool of choice for users needing reliable automation. Use responsibly, as Clakr's use may contravene certain software policies.
+Clakr is an auto-clicker application developed in Swift, focusing on high-speed automated mouse clicking. It has undergone testing across different tasks using intervals of 15 seconds to ensure performance consistency. 
+
+> [WARN]
+> Please be aware that by using Clakr, you accept full responsibility for any consequences, such as bans or penalties from software or services that prohibit the use of auto-clickers.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 [![Latest Release](https://img.shields.io/github/release/senpaihunters/clakr.svg)](https://github.com/senpaihunters/clakr/releases)

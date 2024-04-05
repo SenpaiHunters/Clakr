@@ -6,7 +6,7 @@
 
 Clakr is an auto-clicker application developed in Swift, focusing on high-speed automated mouse clicking. It has undergone testing across different tasks using intervals of 15 seconds to ensure performance consistency. 
 
-> [WARN]
+> [!CAUTION]
 > Please be aware that by using Clakr, you accept full responsibility for any consequences, such as bans or penalties from software or services that prohibit the use of auto-clickers.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
@@ -56,7 +56,7 @@ brew install node
 npm install jstat
 ```
 
-> [NOTICE]
+> [!WARNING]
 > If you do not have brew installed you can install it [here](https://brew.sh)
 
 3. Navigate to the script directory:

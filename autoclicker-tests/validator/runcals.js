@@ -1,4 +1,5 @@
 // jStat library is used for statistical calculations (https://jstat.github.io/)
+// Use Bun or node, prefer bun.
 const jStat = require('jstat').jStat;
 
 // Array of click counts from your Clakr results
@@ -62,7 +63,7 @@ const stats = {
 
 function generateReport(stats, testParams) {
   const formatter = (num, digits = 2) => num.toFixed(digits);
-  const formattedClicks = clicks.map((click, index) => `- Run ${index + 1}: ${click}`).join('\n');
+  // const formattedClicks = clicks.map((click, index) => `- Run ${index + 1}: ${click}`).join('\n');
 
   return `
 ┌─────────────────── Clakr Test Summary ───────────────────┐
@@ -109,11 +110,13 @@ Outliers:
   Outlier Clicks: ${stats.outliers.length}
   Outlier Values: ${stats.outliers.map(formatter).join(', ')}
 
-Runs (Formatted):
-${formattedClicks}
 
 └──────────────────────────────────────────────────────────┘
 `.trim();
 }
+
+// Add this to below the outliers
+// Runs (Formatted):
+// ${formattedClicks}
 
 console.log(generateReport(stats, testParams));

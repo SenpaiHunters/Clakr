@@ -69,8 +69,9 @@ To ensure Clakr's performance, follow these steps:
 2. Install prerequisites:
 
 ```sh
-brew install node
-npm install jstat
+brew tap oven-sh/bun
+brew install bun
+bun install jstat
 ```
 
 3. Navigate to the script directory:
@@ -82,7 +83,7 @@ cd path/to/autoclicker-tests
 4. Run the script:
 
 ```sh
-node runcals.js
+bun runcals.js
 ```
 
 > Input your Clakr test results in the script for automatic analysis.
@@ -286,7 +287,11 @@ clakr is open-sourced under the MIT License. See the [LICENSE](LICENSE.md) file 
 
 ## Acknowledgments
 
-- [KawaiiFumiko002](https://www.reddit.com/user/Alex20041509/) - App icon creater
+- [KawaiiFumiko002](https://github.com/Alessandro15204)
+  - [App icon creater]()
+
+- [Sindre Sorhus](https://github.com/sindresorhus)
+  - [Keyboard Shortcuts](https://github.com/sindresorhus/KeyboardShortcuts)
 
 ## Explore More
 
@@ -321,6 +326,9 @@ clakr is open-sourced under the MIT License. See the [LICENSE](LICENSE.md) file 
 
 - **Q: Is Clakr available through Homebrew?**
   - A: Currently, Clakr is not available as a Homebrew cask. The project has not yet met the criteria for inclusion in the main Homebrew repository. However, adding Clakr to Homebrew is on our roadmap. If you're experienced with creating Homebrew casks and would like to contribute, we welcome pull requests or direct guidance on this matter! If you require anything for us, feel free to send me a message.
+
+- **Q: Am i going to change the name to Clark?**
+  - A: Who knows! Maybe, even i don't know!
 
 </details>
 

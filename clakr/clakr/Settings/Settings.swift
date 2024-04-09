@@ -26,7 +26,7 @@ struct SettingsView: View {
     var id: String { self.rawValue }
   }
 
-  private let frameSize = CGSize(width: 630, height: 500)  // Adjusted size
+  private let frameSize = CGSize(width: 630, height: 500)
 
   var body: some View {
     NavigationView {
@@ -273,7 +273,7 @@ struct AboutView: View {
           "Clakr is a simple, lightweight auto-clicker designed for macOS. It can be used as a menu bar app, or a stand alone app, play a sound when the clicker starts? It's up to you!"
         )
         Text(
-          "Clakr is entirely open-sourced as well, allowing for transparency and enabling everyone has access to an up-to-date, free and fast auto-clicker."
+          "Clakr is entirely open-sourced, this allows for user and developer transparency and an up-to-date, free and fast auto-clicker."
         )
         Text(
           "Please be aware that by using Clakr, you accept full responsibility for any consequences, such as bans or penalties from software or services that prohibit the use of auto-clickers."

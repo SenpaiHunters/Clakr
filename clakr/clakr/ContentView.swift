@@ -13,35 +13,64 @@ struct ContentView: View {
   @AppStorage("startAfterSeconds") private var startAfterSeconds: TimeInterval = 0
   @AppStorage("stopAfterSeconds") private var stopAfterSeconds: TimeInterval = 0
   @AppStorage("stationaryForSeconds") private var stationaryForSeconds: TimeInterval = 0
-
-  @State private var isClicking = false
+  @StateObject var viewModel = ViewModel()
+  @State private var showingSettings = false
 
   var body: some View {
     ZStack {
       VisualEffectView(material: .hudWindow, blendingMode: .behindWindow)
         .edgesIgnoringSafeArea(.all)
-
-      VStack(spacing: 20) { 
-        headerView
-        Divider()
-        settingsGroup
-        Divider()
-        startStopButton
-      }
-      .padding(.horizontal, 10)
-      .padding(.top, -5)
+      content
     }
-    .frame(
-      minWidth: 320, idealWidth: 320, maxWidth: 340, minHeight: 450, idealHeight: 450,
-      maxHeight: 460
-    )
-    .onReceive(autoClicker.$isClicking) { isClicking = $0 }
+    .toolbar { settingsButton }
+    .onReceive(NotificationCenter.default.publisher(for: .showSettings)) { _ in
+      if !showingSettings {
+        showingSettings = true
+      }
+    }
+    .sheet(isPresented: $showingSettings) {
+      SettingsView(autoClicker: autoClicker)
+    }
+  }
+
+  private var content: some View {
+    VStack(spacing: 20) {
+      headerView
+      Divider()
+      settingsGroup
+      Divider()
+      startStopButton
+    }
+    .padding(.horizontal, 10)
+  }
+
+  private var settingsButton: some ToolbarContent {
+    ToolbarItem(placement: .principal) {
+      Button(action: { showingSettings.toggle() }) {
+        Label("Settings", systemImage: "gear")
+          .font(.headline)
+          .foregroundColor(.primary)
+          .padding(.vertical, 2)
+          .padding(.horizontal, 20)
+          .background(showingSettings ? Color.blue.opacity(0.5) : Color.gray.opacity(0.2))
+          .cornerRadius(10)
+          .overlay(
+            RoundedRectangle(cornerRadius: 10)
+              .stroke(Color.accentColor, lineWidth: 1)
+          )
+          .scaleEffect(showingSettings ? 1.05 : 1.0)
+          .animation(.easeInOut(duration: 0.2), value: showingSettings)
+          .padding(.bottom, 2)
+      }
+      .buttonStyle(PlainButtonStyle())
+      .accessibilityLabel("Settings")
+    }
   }
 
   private var headerView: some View {
     Text("Clakr")
       .font(.system(size: 36, weight: .bold))
-      .foregroundColor(.accentColor)
+      .foregroundColor(.white)
   }
 
   private var settingsGroup: some View {
@@ -56,63 +85,52 @@ struct ContentView: View {
   private var startStopButton: some View {
     Button(action: toggleClicking) {
       Label {
-        Text(isClicking ? "Stop" : "Start")
+        Text(autoClicker.isClicking ? "Stop" : "Start")
           .fontWeight(.semibold)
           .font(.title3)
       } icon: {
-        Image(systemName: isClicking ? "stop.fill" : "play.fill")
+        Image(systemName: autoClicker.isClicking ? "stop.fill" : "play.fill")
           .font(.title3)
       }
     }
-    .buttonStyle(PrimaryButtonStyle(isClicking: isClicking))
-    .accessibilityLabel(isClicking ? "Stop clicking" : "Start clicking")
-    .accessibilityHint("Toggles the auto-clicker on or off")
-    .accessibilityAddTraits(.isButton)
+    .buttonStyle(PrimaryButtonStyle(isClicking: autoClicker.isClicking))
+    .configureAccessibility(isClicking: autoClicker.isClicking)
   }
+
   private func toggleClicking() {
-    isClicking.toggle()
-    if isClicking {
-      autoClicker.startClicking(
-        clicksPerSecond: clicksPerSecond, startAfter: startAfterSeconds,
-        stopAfter: stopAfterSeconds, stationaryFor: stationaryForSeconds)
-    } else {
-      autoClicker.stopClicking()
+    withAnimation {
+      autoClicker.toggleClicking()  // This will handle the sound as well
+      if autoClicker.isClicking {
+        autoClicker.startClicking(
+          clicksPerSecond: clicksPerSecond, startAfter: startAfterSeconds,
+          stopAfter: stopAfterSeconds, stationaryFor: stationaryForSeconds)
+      } else {
+        autoClicker.stopClicking()
+      }
     }
   }
+}
 
-  struct PrimaryButtonStyle: ButtonStyle {
-    var isClicking: Bool
-    @State private var isHovering = false
+struct PrimaryButtonStyle: ButtonStyle {
+  var isClicking: Bool
 
-    func makeBody(configuration: Configuration) -> some View {
-      configuration.label
-        .padding()
-        .foregroundColor(.white)
-        .background(
-          LinearGradient(
-            gradient: Gradient(colors: [
-              isClicking ? .red : .blue, isHovering ? .gray : (isClicking ? .orange : .purple),
-            ]),
-            startPoint: .leading,
-            endPoint: .trailing
-          )
-        )
-        .cornerRadius(15)
-        .scaleEffect(configuration.isPressed ? 0.96 : (isHovering ? 1.04 : 1))
-        .shadow(color: isHovering ? .gray : (isClicking ? .red : .blue), radius: 2, x: 0, y: 2)
-        .overlay(
-          RoundedRectangle(cornerRadius: 15)
-            .stroke(Color.gray.opacity(0.5), lineWidth: 1)
-        )
-        .animation(.easeInOut, value: isHovering)
-        .animation(.easeInOut, value: configuration.isPressed)
-        .animation(.easeInOut, value: isClicking)
-        #if os(macOS)
-          .onHover { hover in
-            isHovering = hover
-          }
-        #endif
-    }
+  func makeBody(configuration: Configuration) -> some View {
+    configuration.label
+      .padding(.vertical, 6)
+      .padding(.horizontal)
+      .foregroundColor(isClicking ? .white : .black)
+      .background(
+        Capsule()
+          .fill(isClicking ? Color.red : Color.white)
+      )
+      .overlay(
+        Capsule()
+          .stroke(Color.gray.opacity(0.5), lineWidth: 1)
+      )
+      .scaleEffect(configuration.isPressed ? 0.96 : 1)
+      .animation(
+        .easeInOut(duration: 0.2), value: configuration.isPressed || isClicking
+      )
   }
 }
 
@@ -127,15 +145,11 @@ struct SettingTextField: View {
       Spacer()
       TextField("", value: $value, formatter: Self.decimalFormatter)
         .frame(width: 80)
-        .textFieldStyle(RoundedBorderTextFieldStyle())
         .multilineTextAlignment(.trailing)
-        #if canImport(UIKit)
-          .keyboardType(.decimalPad)
-        #endif
     }
     .padding(.vertical, 8)
     .padding(.horizontal)
-    .background(Color.gray.opacity(0.2))
+    .background(Color.gray.opacity(0.1))
     .cornerRadius(10)
   }
 
@@ -163,7 +177,7 @@ struct SettingStepper: View {
     }
     .padding(.vertical, 8)
     .padding(.horizontal)
-    .background(Color.gray.opacity(0.2))
+    .background(Color.gray.opacity(0.1))
     .cornerRadius(10)
   }
 }

@@ -65,7 +65,7 @@ function generateReport(stats, testParams) {
   const formattedClicks = clicks.map((click, index) => `- Run ${index + 1}: ${click}`).join('\n');
 
   return `
-------------------- Clakr Test Summary ------------------------
+┌─────────────────── Clakr Test Summary ───────────────────┐
 
 Performance:
   Best Run: ${(stats.bestRun)} clicks
@@ -112,7 +112,7 @@ Outliers:
 Runs (Formatted):
 ${formattedClicks}
 
---------------------------------------------------------------
+└──────────────────────────────────────────────────────────┘
 `.trim();
 }
 

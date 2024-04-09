@@ -288,7 +288,7 @@ clakr is open-sourced under the MIT License. See the [LICENSE](LICENSE.md) file 
 ## Acknowledgments
 
 - [KawaiiFumiko002](https://github.com/Alessandro15204)
-  - [App icon creater]()
+  - [App icon creater](https://github.com/SenpaiHunters/Clakr/tree/main/clakr/clakr/Assets.xcassets/AppIcon.appiconset)
 
 - [Sindre Sorhus](https://github.com/sindresorhus)
   - [Keyboard Shortcuts](https://github.com/sindresorhus/KeyboardShortcuts)

@@ -9,7 +9,7 @@ import Cocoa
 import KeyboardShortcuts
 import SwiftUI
 
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
   // UI components and managers
   private var statusBarItem: NSStatusItem?
   private var popover = NSPopover()
@@ -50,6 +50,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   // Configures the main window's appearance and behavior
   private func configureWindow() {
     guard let window = window else { return }
+    window.delegate = self  // Set the AppDelegate as the window's delegate
     // Set up the window's title bar and size constraints
     window.standardWindowButton(.closeButton)?.isEnabled = true
     window.standardWindowButton(.miniaturizeButton)?.isEnabled = true
@@ -60,6 +61,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     window.setContentSize(Constants.fixedWindowSize)
     window.minSize = Constants.fixedWindowSize
     window.maxSize = Constants.fixedWindowSize
+  }
+
+  func windowWillResize(_ sender: NSWindow, to frameSize: NSSize) -> NSSize {
+    // Return the fixed window size regardless of the frameSize being requested.
+    return Constants.fixedWindowSize
   }
 
   // Checks and requests accessibility permissions necessary for the app

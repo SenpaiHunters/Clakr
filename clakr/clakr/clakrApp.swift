@@ -16,8 +16,6 @@ struct clakrApp: App {
   var body: some Scene {
     WindowGroup {
       ContentView()
-        .frame(width: 320, height: 450)
-        .fixedSize()
         .sheet(isPresented: $showingSettings) {
           SettingsView(autoClicker: AutoClicker())
         }

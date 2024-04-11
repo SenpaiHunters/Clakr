@@ -233,80 +233,113 @@ struct AboutView: View {
   @Environment(\.presentationMode) var presentationMode
 
   var body: some View {
-    VStack {
+    VStack(alignment: .leading, spacing: 10) {
       SectionHeaderView(title: "About Clakr")
 
       Divider()
 
-      VStack(alignment: .leading, spacing: 5) {
-        Text("Thank you to the following:")
-          .font(.headline)
-          .padding(.bottom, 5)
-
-        HStack(alignment: .top) {
-          Text("• Sindre Sorhus:")
-            .fontWeight(.semibold)
-          VStack(alignment: .leading) {
-            Link(
-              "KeyboardShortcuts",
-              destination: URL(string: "https://github.com/sindresorhus/KeyboardShortcuts")!)
-          }
-        }
-
-        HStack(alignment: .top) {
-          Text("• KawaiiFumiko002:")
-            .fontWeight(.semibold)
-          Text("App icon creator")
-        }
-      }
-      .frame(maxWidth: .infinity, alignment: .leading)
-      .padding()
+      aboutClakrSection
 
       Divider()
 
-      VStack(alignment: .leading, spacing: 5) {
-        Text("More about clakr:")
-          .font(.headline)
-          .padding(.bottom, 5)
-
-        Text(
-          "Clakr is a simple, lightweight auto-clicker designed for macOS. It can be used as a menu bar app, or a stand alone app, play a sound when the clicker starts? It's up to you!"
-        )
-        Text(
-          "Clakr is entirely open-sourced, this allows for user and developer transparency and an up-to-date, free and fast auto-clicker."
-        )
-        Text(
-          "Please be aware that by using Clakr, you accept full responsibility for any consequences, such as bans or penalties from software or services that prohibit the use of auto-clickers."
-        )
-        Link(
-          "I do not charge anuthing for Clakr, however, if you'd like to support me you can do so here",
-          destination: URL(string: "https://github.com/SenpaiHunters/Clakr/blob/main/LICENSE.md")!
-        )
-      }
-      .frame(maxWidth: .infinity, alignment: .leading)
-      .padding()
-
-      Spacer()
+      acknowledgementsSection
 
       Divider()
 
-      HStack {
-        Text("© \(currentYear) Kami. All rights reserved.")
-          .font(.footnote)
-        Spacer()
-        Link(
-          "MIT License",
-          destination: URL(string: "https://github.com/SenpaiHunters/Clakr/blob/main/LICENSE.md")!
-        )
-        .font(.footnote)
-      }
-      .padding()
+      copyrightAndVersionSection
     }
+    .padding()
   }
 
-  var currentYear: String {
+  private var acknowledgementsSection: some View {
+    VStack(alignment: .leading, spacing: 5) {
+      Text("Acknowledgements")
+        .font(.title2)
+        .padding(.bottom, 5)
+
+      HStack {
+        Text("Sindre Sorhus")
+          .bold()
+        Spacer()
+        Link(
+          "KeyboardShortcuts library",
+          destination: URL(string: "https://github.com/sindresorhus/KeyboardShortcuts")!)
+      }
+      .padding(.bottom, 3)
+
+      HStack {
+        Text("KawaiiFumiko002")
+          .bold()
+        Spacer()
+        Text("App icon creator")
+      }
+    }
+    .padding(.vertical)
+  }
+
+  private var aboutClakrSection: some View {
+    VStack(alignment: .leading, spacing: 5) {
+      Text("More about Clakr")
+        .font(.title2)
+        .padding(.bottom, 2)
+
+      Text("Clakr is a simple, lightweight auto-clicker designed for macOS. It can be used as a menu bar app, or a standalone app, with optional sound effects when the clicker starts.")
+      .padding(.bottom, 1)
+
+      Text("Clakr is entirely open-sourced, ensuring user and developer transparency for an up-to-date, free, and fast auto-clicker.")
+      .padding(.bottom, 1)
+
+      Text("Please be aware that by using Clakr, you accept full responsibility for any consequences, such as bans or penalties from software or services that prohibit the use of auto-clickers.")
+      .padding(.bottom, 1)
+
+      Link("Support Clakr's development", destination: URL(string: "https://www.buymeacoffee.com/kamiamvs")!)
+      .padding(.bottom, 1)
+    }
+    .padding(.vertical)
+  }
+
+  private var copyrightAndVersionSection: some View {
+    HStack {
+      Text("© \(currentYear) Kami. All rights reserved.")
+        .font(.footnote)
+      Link(
+        "MIT License",
+        destination: URL(string: "https://github.com/SenpaiHunters/Clakr/blob/main/LICENSE.md")!
+      )
+      .font(.footnote)
+      Spacer()
+      Text("\(appVersionAndBuild)")
+        .font(.footnote)
+      Button(action: copyVersionToClipboard) {
+        Image(systemName: "doc.on.doc")
+          .foregroundColor(.accentColor)
+      }
+      .buttonStyle(BorderlessButtonStyle())
+      .help("Copy version to clipboard")
+    }
+    .padding(.vertical)
+  }
+
+  private func copyVersionToClipboard() {
+    let pasteboard = NSPasteboard.general
+    pasteboard.clearContents()
+    pasteboard.setString(appVersionAndBuild, forType: .string)
+  }
+
+  private var currentYear: String {
     let formatter = DateFormatter()
     formatter.dateFormat = "yyyy"
     return formatter.string(from: Date())
+  }
+
+  private var appVersionAndBuild: String {
+    guard
+      let versionNumber = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString")
+        as? String,
+      let buildNumber = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String
+    else {
+      return "Unknown"
+    }
+    return "Version: \(versionNumber) (\(buildNumber))"
   }
 }

@@ -68,13 +68,24 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
     return Constants.fixedWindowSize
   }
 
+  func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool
+  {
+    if !flag {
+      // If there are no visible windows, bring back the main window
+      if let window = window {
+        NSApp.activate(ignoringOtherApps: true)
+        window.makeKeyAndOrderFront(nil)
+      }
+    }
+    return true
+  }
+
   // Checks and requests accessibility permissions necessary for the app
   private func checkAccessibilityPermissions() {
     let options =
       [kAXTrustedCheckOptionPrompt.takeUnretainedValue() as String: true] as CFDictionary
-    guard !AXIsProcessTrustedWithOptions(options) else { return }
+    if AXIsProcessTrustedWithOptions(options) { return }
 
-    // Show an alert if permissions are not granted
     let alert = NSAlert()
     alert.messageText = "Accessibility Permission Required"
     alert.informativeText =
@@ -96,8 +107,38 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
 
   // Sets up a listener for keyboard shortcuts
   private func setupKeyboardShortcutListener() {
+    let notificationCenter = NotificationCenter.default
+
+    notificationCenter.addObserver(
+      self,
+      selector: #selector(updateShortcutStatus),
+      name: NSApplication.didBecomeActiveNotification,
+      object: nil
+    )
+
+    notificationCenter.addObserver(
+      self,
+      selector: #selector(updateShortcutStatus),
+      name: NSApplication.willResignActiveNotification,
+      object: nil
+    )
+
     KeyboardShortcuts.onKeyUp(for: .openSettingsShortcut) { [weak self] in
       self?.toggleSettings()
+    }
+  }
+
+  // Don't forget to remove observers when they are no longer needed
+  deinit {
+    NotificationCenter.default.removeObserver(self)
+  }
+
+  // Helper method to enable/disable the shortcut based on application's active status
+  @objc private func updateShortcutStatus(notification: Notification) {
+    if notification.name == NSApplication.didBecomeActiveNotification {
+      KeyboardShortcuts.enable(.openSettingsShortcut)
+    } else if notification.name == NSApplication.willResignActiveNotification {
+      KeyboardShortcuts.disable(.openSettingsShortcut)
     }
   }
 

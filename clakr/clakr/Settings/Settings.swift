@@ -26,7 +26,7 @@ struct SettingsView: View {
     var id: String { self.rawValue }
   }
 
-  private let frameSize = CGSize(width: 630, height: 500)
+  private let frameSize = CGSize(width: 650, height: 500)
 
   var body: some View {
     NavigationView {
@@ -278,25 +278,24 @@ struct AboutView: View {
   }
 
   private var aboutClakrSection: some View {
-    VStack(alignment: .leading, spacing: 5) {
-      Text("More about Clakr")
-        .font(.title2)
-        .padding(.bottom, 2)
+  VStack(alignment: .leading, spacing: 5) {
+    Text("More about Clakr")
+      .font(.title2)
+      .padding(.bottom, 5)
 
-      Text("Clakr is a simple, lightweight auto-clicker designed for macOS. It can be used as a menu bar app, or a standalone app, with optional sound effects when the clicker starts.")
+    Text("Clakr is a simple, lightweight auto-clicker designed for macOS. It can be used as a menu bar app, or a standalone app, with optional sound effects when the clicker starts.")
       .padding(.bottom, 1)
 
-      Text("Clakr is entirely open-sourced, ensuring user and developer transparency for an up-to-date, free, and fast auto-clicker.")
+    Text("Clakr is entirely open-sourced, ensuring user and developer transparency for an up-to-date, free, and fast auto-clicker.")
       .padding(.bottom, 1)
 
-      Text("Please be aware that by using Clakr, you accept full responsibility for any consequences, such as bans or penalties from software or services that prohibit the use of auto-clickers.")
+    Text("Please be aware that by using Clakr, you accept full responsibility for any consequences, such as bans or penalties from software or services that prohibit the use of auto-clickers.")
       .padding(.bottom, 1)
 
-      Link("Support Clakr's development", destination: URL(string: "https://www.buymeacoffee.com/kamiamvs")!)
-      .padding(.bottom, 1)
-    }
-    .padding(.vertical)
+    Link("Support Clakr's development", destination: URL(string: "https://www.buymeacoffee.com/kamiamvs")!)
+      .padding(.bottom, 3)
   }
+}
 
   private var copyrightAndVersionSection: some View {
     HStack {

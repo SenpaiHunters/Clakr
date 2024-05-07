@@ -5,7 +5,7 @@
 	<key>SUEnableInstallerLauncherService</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string>https://senpaihunters.github.io/Clakr/Releases/appcast.xml</string>
+	<string>https://senpaihunters.github.io/Clakr/releases/appcast.xml</string>
 	<key>SUPublicEDKey</key>
 	<string>c8NbpwlT3IwrARjiE4876SVZAkKZ353fZA8VCVY1AjM=</string>
 </dict>

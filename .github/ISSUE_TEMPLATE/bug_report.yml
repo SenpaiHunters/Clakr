@@ -54,9 +54,26 @@ body:
   - type: input
     attributes:
       label: Clakr Version
-      description: You can find this in Clakr\'s about window!
+      description: You can find this in Clakr\'s about window, this can be found in the settings or menu bar!
       placeholder: |
         [ex. Version 1.0.0 (246)]
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Clakr Debug info
+      description: You can find this in Clakr\'s help menu, or by pressing ⌘D!
+      placeholder: |
+        Debug Information:
+        Accessibility Permissions: Granted
+        Accessibility Enabled: Yes
+        App Version: 1.2
+        Build Version: 481
+        macOS Version: Version 14.3 (Build 23D56)
+        Main Run Loop Active: Yes
+        Blacklist Count: 1
+        Blacklisted Applications: Arc.app (company.thebrowser.Browser)
     validations:
       required: true
 

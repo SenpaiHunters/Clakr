@@ -2,13 +2,19 @@
 
 # Clakr
 
-Clakr is an auto-clicker application developed in Swift, focusing on high-speed automated mouse clicking. It has undergone testing across different tasks using intervals of 15 seconds to ensure performance consistency.
+Click that, Clakr that!
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
+Clakr is an auto-clicker application developed in Swift, focusing on high-speed automated mouse clicking.
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE.md)
 [![Latest Release](https://img.shields.io/github/release/senpaihunters/clakr.svg)](https://github.com/senpaihunters/clakr/releases)
 [![Open Issues](https://img.shields.io/github/issues/senpaihunters/clakr.svg)](https://github.com/senpaihunters/clakr/issues)
 
 ![clakr Banner](assets/clakr.gif)
+
+---
+
+![Activity](https://repobeats.axiom.co/api/embed/546eacfe73cf9c90c7f2b0056399fa6bc5cbacbc.svg "analytics image")
 
 </div>
 
@@ -21,9 +27,19 @@ Clakr is an auto-clicker application developed in Swift, focusing on high-speed 
 > [!CAUTION]
 > Please be aware that by using Clakr, you accept full responsibility for any consequences, such as bans or penalties from software or services that prohibit the use of auto-clickers.
 
-### Activity
+## Table of Contents
 
-![Activity](https://repobeats.axiom.co/api/embed/546eacfe73cf9c90c7f2b0056399fa6bc5cbacbc.svg "analytics image")
+- [Features](#features)
+- [Quick Start](#quick-start)
+- [Installation](#installation-steps)
+- [Performance Insights](#performance-insights)
+- [Development or Self-Compiling](#development-or-self-compiling)
+- [Troubleshooting Guide](#troubleshooting-guide)
+- [Contributing](#contributing)
+- [Support](#support)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+- [FAQs](#frequently-asked-questions-faqs)
 
 ## Features
 
@@ -43,255 +59,101 @@ Clakr is an auto-clicker application developed in Swift, focusing on high-speed 
 
 ### Installation Steps
 
-1. Grab the latest release from the [Releases page](https://github.com/senpaihunters/clakr/releases).
-2. Move the application to your Applications folder.
-3. If prompted about an unsigned application, right-click and choose "Open".
+You can install Clakr using Homebrew or by downloading it directly from the GitHub releases page.
 
-### How to Use
+#### Installing via Homebrew
 
-1. Open Clakr.
-2. Set your preferences.
-3. Hit "Start" to begin clicking.
-4. Stop manually or let the timer do it for you.
+To install Clakr using Homebrew, run the following command in your terminal:
+
+```bash
+brew install --cask --no-quarantine SenpaiHunters/clakr/clakr
+```
+
+- It's important to note that passing `--no-quarantine` with brew ensures macOS Gatekeeper is disabled, allowing the app to open even if it's unsigned.
+
+> [!TIP]
+>
+> The Homebrew cask for Clakr are maintained in a separate repository, which is open-sourced and available [here](https://github.com/SenpaiHunters/homebrew-clakr).
+
+#### Installing from GitHub Releases
+
+Alternatively, you can manually install Clakr by downloading the latest release:
+
+1. Download the latest release from the [Releases page](https://github.com/senpaihunters/clakr/releases).
+2. Move the downloaded application to your Applications folder.
+3. If macOS prompts you about an unsigned application, right-click on Clakr and choose "Open" to proceed with the installation.
+
+This method allows you to bypass macOS's gatekeeper checks for unsigned applications on the first run.
+
+> [!TIP]
+>
+> Want to skip needing to reconfirm each update? Run `xattr -d com.apple.quarantine clakr.app`, this will disable quarantine, i.e., Gatekeeper for the app.
 
 ## Performance Insights
 
-> [!IMPORTANT]
-> This requires brew to be installed.
-> If you do not have brew installed you can install it [here](https://brew.sh).
+This has been moved to [Performance.md](Performance.md). For the results, check there!
 
-<details>
-<summary>Validation Results (Click to Expand)</summary>
+## Development or Self-Compiling
 
-To ensure Clakr's performance, follow these steps:
+### Instructions
 
-1. Get the validation script [here](autoclicker-tests/validator/runcals.js).
-2. Install prerequisites:
+#### Before You Begin
 
-```sh
-brew tap oven-sh/bun
-brew install bun
-bun install jstat
-```
+*Skip this section if you already have an Apple Developer account.*
 
-3. Navigate to the script directory:
+0. Enroll your account in the Developer Program at [developer.apple.com](https://developer.apple.com/). A free account works just fine; you don't need a paid one.
+1. Install Xcode.
+2. Add your Developer account to Xcode. To do this, click `Xcode → Preferences` in the Menu bar, and in the window that opens, click `Accounts`. You can add your account there.
+3. After adding your account, it will appear in the list of Apple IDs on the left side of the screen. Select your account.
+4. At the bottom of the screen, click `Manage Certificates...`.
+5. On the bottom left, click the **+** icon and select `Apple Development`.
+6. When a new item labeled `Apple Development Certificates` appears in the list, press `Done` to close the account manager.
 
-```sh
-cd path/to/autoclicker-tests
-```
+#### Compiling Clakr
 
-4. Run the script:
-
-```sh
-bun runcals.js
-```
-
-> Input your Clakr test results in the script for automatic analysis.
-
-> If you've renamed `runcals.js`, adjust the command accordingly.
-
-#### Performance Summary
-
-```sh
-------------------- Clakr Test Summary ------------------------
-
-Performance:
-  Best Run: 15000 clicks
-  Slowest Run: 14798 clicks
-  Average: 14972.44 clicks
-  Median: 14979.00 clicks
-  Range: 202.00 clicks (14798 - 15000)
-  Perfect Result: 15000 clicks
-  Number of times Perfect Result happened: 2
-  Probability of Perfect Result: 2.00%
-
-Sample Statistics:
-  Sample Size: 100 clicks
-  Test Length: 15 seconds
-  Clicks Per Second: 1000
-  Start after: 3 seconds
-  Stationary for: 2 seconds
-  Sum of All Clicks: 1497244.00 clicks
-  10th Percentile: 14942.00 clicks
-  90th Percentile: 14991.10 clicks
-  Mode: 14988,14989 clicks
-
-Variability:
-  Error Margin: 0.18%
-  Standard Deviation: ±27.07
-  Variance: 732.71
-  Coefficient of Variation: 0.18%
-  Interquartile Range (IQR): 20.00 clicks
-  Standard Error of the Mean (SEM): 2.7069
-
-Distribution Shape:
-  Skewness: -3.5104
-  Kurtosis: 17.0360
-
-Confidence Intervals:
-  95%: 14967.13 - 14977.75
-  99%: 14965.47 - 14979.41
-
-Outliers:
-  Threshold: 3 standard deviations
-  Outlier Clicks: 2
-  Outlier Values: 14798, 14876.0
-
---------------------------------------------------------------
-```
-
-<details>
-    <summary>Individual Runs</summary>
-
-- Run 1: 14989
-- Run 2: 14990
-- Run 3: 14989
-- Run 4: 14941
-- Run 5: 14925
-- Run 6: 14993
-- Run 7: 14974
-- Run 8: 14977
-- Run 9: 14980
-- Run 10: 14973
-- Run 11: 14968
-- Run 12: 14986
-- Run 13: 14977
-- Run 14: 14979
-- Run 15: 14983
-- Run 16: 14990
-- Run 17: 14992
-- Run 18: 14987
-- Run 19: 14975
-- Run 20: 14987
-- Run 21: 14925
-- Run 22: 14970
-- Run 23: 14965
-- Run 24: 14941
-- Run 25: 14964
-- Run 26: 14988
-- Run 27: 14976
-- Run 28: 14985
-- Run 29: 14990
-- Run 30: 14982
-- Run 31: 14978
-- Run 32: 14984
-- Run 33: 14979
-- Run 34: 14981
-- Run 35: 14977
-- Run 36: 14988
-- Run 37: 14973
-- Run 38: 14986
-- Run 39: 14980
-- Run 40: 14992
-- Run 41: 14989
-- Run 42: 14975
-- Run 43: 14987
-- Run 44: 14978
-- Run 45: 14983
-- Run 46: 14991
-- Run 47: 14976
-- Run 48: 14985
-- Run 49: 14974
-- Run 50: 14988
-- Run 51: 14943
-- Run 52: 14936
-- Run 53: 14980
-- Run 54: 14984
-- Run 55: 14971
-- Run 56: 14965
-- Run 57: 14965
-- Run 58: 14957
-- Run 59: 14957
-- Run 60: 14937
-- Run 61: 14980
-- Run 62: 14962
-- Run 63: 14945
-- Run 64: 14968
-- Run 65: 14942
-- Run 66: 14989
-- Run 67: 14987
-- Run 68: 14989
-- Run 69: 15000
-- Run 70: 14798
-- Run 71: 14981
-- Run 72: 14988
-- Run 73: 14964
-- Run 74: 14992
-- Run 75: 14942
-- Run 76: 14893
-- Run 77: 14876
-- Run 78: 15000
-- Run 79: 14972
-- Run 80: 14985
-- Run 81: 14973
-- Run 82: 14977
-- Run 83: 14960
-- Run 84: 14956
-- Run 85: 14999
-- Run 86: 14993
-- Run 87: 14988
-- Run 88: 14976
-- Run 89: 14979
-- Run 90: 14974
-- Run 91: 14981
-- Run 92: 14980
-- Run 93: 14976
-- Run 94: 14990
-- Run 95: 14992
-- Run 96: 14987
-- Run 97: 14989
-- Run 98: 14958
-- Run 99: 14988
-- Run 100: 14995
-
-</details>
-
-### Factors Affecting Performance
-
-Several technical aspects can influence the click count:
-
-1. **Timer Granularity**
-2. **Event Coalescing**
-3. **System Load**
-4. **Thread Scheduling**
-5. **API and Driver Overhead**
-6. **Hardware Limitations**
-7. **Software Limitations**
-8. **Precision of Floating-Point Arithmetic**
-9. **Interrupts and Context Switching**
-10. **Event Processing**
-
-</details>
+1. Clone this repository using `git clone https://github.com/SenpaiHunters/Clakr.git && cd Clakr && open Clakr.xcodeproj`. Xcode will open the project.
+2. Wait until all dependencies are resolved. This should take a couple of minutes at most.
+3. In the file browser on the left, click `Clakr` at the very top. It's the icon with the App Store logo.
+4. In the pane that opens on the right, click `Signing & Capabilities` at the top.
+5. Under `Signing`, change the `Team` dropdown to `None`.
+6. Under `Signing → macOS`, change the `Signing Certificate` to `Sign to Run Locally`.
+7. In the Menu Bar, click `Product → Archive` and wait for the build to finish.
+8. A new window will open. From the list of Clakr entries, select the topmost one, and click `Distribute App`.
+9. In the popup that appears, click `Custom`, then click `Next` in the bottom right of the popup.
+10. Click `Copy App`.
+11. Open the resulting folder. You'll see an app named Clakr. Drag Clakr to your `/Applications/` folder, and you're all set!
 
 ## Troubleshooting Guide
 
 If you encounter issues while using Clakr, here are some common problems and their solutions:
 
-- **Application won't start**: Ensure that you have the required macOS version and that you have followed the installation steps correctly. If the issue persists, try restarting your computer, if it further does not work, submit an issue on our [Issues page](https://github.com/senpaihunters/clakr/issues).
+- **Application won't start**: Ensure that you have the required macOS version and that you have followed the installation steps correctly. If the issue persists, try restarting your computer. If the problem continues, please submit an issue on our [Issues page](https://github.com/senpaihunters/clakr/issues).
 
-- **Clicks are not registering**: Check if Clakr has the accessibilty permissions in your system settings and that no other software is interfering with its operation.
+- **Clicks are not registering**: Check if Clakr has the accessibility permissions in your system settings and ensure that no other software is interfering with its operation.
 
-If you have further issues, submit an issue on our [Issues page](https://github.com/senpaihunters/clakr/issues).
+If you encounter further issues, please submit an issue on our [Issues page](https://github.com/senpaihunters/clakr/issues).
 
 ## Contributing
 
-We welcome contributions! Please feel free to submit pull requests or create issues for any bugs or enhancements.
+We welcome contributions! Feel free to submit pull requests or create issues for any bugs or enhancements.
 
 ## Support
 
-If you need help or want to discuss clakr, check out our [Issues](https://github.com/senpaihunters/clakr/issues) page.
+If you need help or want to discuss Clakr, check out our [Issues page](https://github.com/senpaihunters/clakr/issues).
 
 ## License
 
-clakr is open-sourced under the MIT License. See the [LICENSE](LICENSE.md) file for more details.
+This project is licensed under the GNU GPLv3 license. See the [LICENSE](LICENSE.md) file for more details.
 
 ## Acknowledgments
 
 - [KawaiiFumiko002](https://github.com/Alessandro15204)
-  - [App icon creater](https://github.com/SenpaiHunters/Clakr/tree/main/clakr/clakr/Assets.xcassets/AppIcon.appiconset)
+  - [App icon creator](https://github.com/SenpaiHunters/Clakr/tree/main/clakr/clakr/Assets.xcassets/AppIcon.appiconset)
 
 - [Sindre Sorhus](https://github.com/sindresorhus)
   - [Keyboard Shortcuts](https://github.com/sindresorhus/KeyboardShortcuts)
+
+- [Sparkle](https://github.com/sparkle-project/Sparkle)
 
 ## Explore More
 
@@ -304,7 +166,7 @@ clakr is open-sourced under the MIT License. See the [LICENSE](LICENSE.md) file 
 <summary>Click to Expand</summary>
 
 - **Q: Can I use Clakr for gaming?**
-  - A: Yes, but be aware of the game's terms of service regarding auto-clickers.
+  - A: Yes, but you should check the game's terms of service regarding the use of auto-clickers. Clakr will not be held responsible for any consequences, such as bans or penalties, from software or services that prohibit the use of auto-clickers.
 
 - **Q: Does Clakr work on non-macOS systems?**
   - A: Currently, Clakr is only available for macOS version 12.0 or newer.
@@ -313,25 +175,28 @@ clakr is open-sourced under the MIT License. See the [LICENSE](LICENSE.md) file 
   - A: Check out our [Contributing](#contributing) section for guidelines on how to contribute.
 
 - **Q: How much system resources does Clakr use?**
-  - A: About 33mb of RAM when open, and depending on how many clicks per second you define, 10% of your CPU whilst activated.
+  - A: Clakr uses about 38.7 MB of RAM when open, and depending on the clicks per second (CPS) you set, it consumes approximately 0.7% of your CPU while active (values measured using `btop`).
 
 - **Q: Is Clakr a menu bar app?**
-  - A: Currently, no Clakr is only an app without a menu bar applicate, this may change later, but as of now, its pretty basic.
+  - A: Yes, Clakr can be configured as a menu bar app or used as a standalone application, whichever you prefer. This option can be found in the settings.
 
-- **Q: Does Clakr support Hotkeys?**
-  - A: Not yet, but i may add hotkey support in a later release.
+- **Q: Does Clakr support hotkeys?**
+  - A: Yes, hotkey activation for Clakr is supported!
 
-- **Q: Do you plan on supporting any lower macOS version?**
-  - A: No, macOS 12 is the lowest i plan to support, however, you may be able to build it for lower.
+- **Q: Do you plan on supporting any lower macOS versions?**
+  - A: No, macOS 12 is the minimum version we plan to support. Building Clakr for lower versions may be possible, but it is untested and not officially supported.
 
 - **Q: Is Clakr available through Homebrew?**
-  - A: Currently, Clakr is not available as a Homebrew cask. The project has not yet met the criteria for inclusion in the main Homebrew repository. However, adding Clakr to Homebrew is on our roadmap. If you're experienced with creating Homebrew casks and would like to contribute, we welcome pull requests or direct guidance on this matter! If you require anything for us, feel free to send me a message.
+  - A: Yes! It can be installed by running `brew install --cask --no-quarantine SenpaiHunters/clakr/clakr`.
 
-- **Q: Am i going to change the name to Clark?**
-  - A: Who knows! Maybe, even i don't know!
+- **Q: Am I going to change the name to Clark?**
+  - A: Who knows! Maybe, even I don't know!
+
+- **Q: Does Clakr track me?**
+  - A: Clakr does not track your activities. In version 1.1 (481), we introduced auto-updating, which pings `senpaihunters.github.io`, our update domain. If you're concerned about privacy, you can block this domain using tools like LuLu or Little Snitch, or by adjusting your DNS settings. However, blocking the domain means you'll need to manually check for and install future updates. Alternatively, you can disable auto-updating in the app's settings, which will prevent the app from making update requests, offering a similar outcome to using a network blocking tool. As always, you are welcome to inspect our code.
 
 </details>
 
 ---
 
-© 2024 clakr. All rights reserved.
+© 2024 Clakr GNU General Public License v3.0.

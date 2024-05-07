@@ -7,19 +7,32 @@
 
 import SwiftUI
 
+class LanguageSettings: ObservableObject {
+  @Published var currentLanguage: String
+
+  init() {
+    self.currentLanguage = Locale.current.languageCode ?? "en"
+  }
+}
+
 struct ContentView: View {
   @StateObject private var autoClicker = AutoClicker()
   @AppStorage("clicksPerSecond") private var clicksPerSecond: Double = 1
   @AppStorage("startAfterSeconds") private var startAfterSeconds: TimeInterval = 0
   @AppStorage("stopAfterSeconds") private var stopAfterSeconds: TimeInterval = 0
   @AppStorage("stationaryForSeconds") private var stationaryForSeconds: TimeInterval = 0
+  @AppStorage("reducedTransparency") private var reducedTransparency: Bool = false
   @StateObject var viewModel = ViewModel()
   @State private var showingSettings = false
+  @StateObject private var languageSettings = LanguageSettings()
 
   var body: some View {
     ZStack {
-      VisualEffectView(material: .hudWindow, blendingMode: .behindWindow)
-        .edgesIgnoringSafeArea(.all)
+      VisualEffectView(
+        material: reducedTransparency ? .windowBackground : .hudWindow, blendingMode: .behindWindow
+      )
+      .overlay(Color.black.opacity(0.2))
+      .edgesIgnoringSafeArea(.all)
       content
     }
     .toolbar { settingsButton }
@@ -27,9 +40,6 @@ struct ContentView: View {
       if !showingSettings {
         showingSettings = true
       }
-    }
-    .sheet(isPresented: $showingSettings) {
-      SettingsView(autoClicker: autoClicker)
     }
   }
 
@@ -41,26 +51,22 @@ struct ContentView: View {
       Divider()
       startStopButton
     }
-    .padding(.horizontal, 10)
+    .padding(.horizontal, 20)
   }
 
   private var settingsButton: some ToolbarContent {
     ToolbarItem(placement: .principal) {
-      Button(action: { showingSettings.toggle() }) {
+      Button(action: { NSApp.delegate?.perform(#selector(AppDelegate.toggleSettings)) }) {
         Label("Settings", systemImage: "gear")
           .font(.headline)
           .foregroundColor(.primary)
           .padding(.vertical, 2)
           .padding(.horizontal, 20)
-          .background(showingSettings ? Color.blue.opacity(0.5) : Color.gray.opacity(0.2))
           .cornerRadius(10)
           .overlay(
             RoundedRectangle(cornerRadius: 10)
               .stroke(Color.accentColor, lineWidth: 1)
           )
-          .scaleEffect(showingSettings ? 1.05 : 1.0)
-          .animation(.easeInOut(duration: 0.2), value: showingSettings)
-          .padding(.bottom, 2)
       }
       .buttonStyle(PlainButtonStyle())
       .accessibilityLabel("Settings")
@@ -75,10 +81,18 @@ struct ContentView: View {
 
   private var settingsGroup: some View {
     Group {
-      SettingTextField(title: "Clicks per second:", value: $clicksPerSecond)
-      SettingStepper(title: "Start after (seconds):", value: $startAfterSeconds)
-      SettingStepper(title: "Stop after (seconds):", value: $stopAfterSeconds)
-      SettingStepper(title: "Stationary for (seconds):", value: $stationaryForSeconds)
+      SettingTextField(
+        title: "Clicks per second:".localized(using: languageSettings.currentLanguage),
+        value: $clicksPerSecond)
+      SettingStepper(
+        title: "Start after (seconds):".localized(using: languageSettings.currentLanguage),
+        value: $startAfterSeconds)
+      SettingStepper(
+        title: "Stop after (seconds):".localized(using: languageSettings.currentLanguage),
+        value: $stopAfterSeconds)
+      SettingStepper(
+        title: "Stationary for (seconds):".localized(using: languageSettings.currentLanguage),
+        value: $stationaryForSeconds)
     }
   }
 
@@ -99,14 +113,7 @@ struct ContentView: View {
 
   private func toggleClicking() {
     withAnimation {
-      autoClicker.toggleClicking()  // This will handle the sound as well
-      if autoClicker.isClicking {
-        autoClicker.startClicking(
-          clicksPerSecond: clicksPerSecond, startAfter: startAfterSeconds,
-          stopAfter: stopAfterSeconds, stationaryFor: stationaryForSeconds)
-      } else {
-        autoClicker.stopClicking()
-      }
+      autoClicker.toggleClicking()
     }
   }
 }
@@ -141,22 +148,18 @@ struct SettingTextField: View {
   var body: some View {
     HStack {
       Text(title)
-        .foregroundColor(.secondary)
+        .foregroundColor(.primary)
+        .font(.system(size: 14))
       Spacer()
-      TextField("", value: $value, formatter: Self.decimalFormatter)
-        .frame(width: 80)
+      TextField("", value: $value, formatter: NumberFormatter())
+        .textFieldStyle(RoundedBorderTextFieldStyle())
+        .frame(width: 100)
         .multilineTextAlignment(.trailing)
+        .padding(.leading, 10)
+        .font(.system(size: 14))
     }
-    .padding(.vertical, 8)
-    .padding(.horizontal)
-    .background(Color.gray.opacity(0.1))
-    .cornerRadius(10)
-  }
-
-  private static var decimalFormatter: NumberFormatter {
-    let formatter = NumberFormatter()
-    formatter.numberStyle = .decimal
-    return formatter
+    .padding(.vertical, 6)
+    .padding(.horizontal, 20)
   }
 }
 
@@ -167,18 +170,21 @@ struct SettingStepper: View {
   var body: some View {
     HStack {
       Text(title)
-        .foregroundColor(.secondary)
-      Spacer()
-      Text("\(Int(value))")
         .foregroundColor(.primary)
-        .frame(width: 50, alignment: .trailing)
-      Stepper("", value: $value, in: 0...Double.infinity, step: 1)
-        .labelsHidden()
+        .font(.system(size: 14))
+      Spacer()
+      HStack(spacing: 5) {
+        Text("\(Int(value))s")
+          .foregroundColor(.primary)
+          .frame(width: 50, alignment: .trailing)
+          .font(.system(size: 14))
+        Stepper("", value: $value, in: 0...Double.infinity, step: 1)
+          .labelsHidden()
+      }
+      .fixedSize()
     }
-    .padding(.vertical, 8)
-    .padding(.horizontal)
-    .background(Color.gray.opacity(0.1))
-    .cornerRadius(10)
+    .padding(.vertical, 6)
+    .padding(.horizontal, 20)
   }
 }
 

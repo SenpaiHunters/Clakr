@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C2080492BDFBBF9000A312B /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2080482BDFBBF9000A312B /* AboutView.swift */; };
+		4C3745742BD4F45900544C34 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 4C3745732BD4F45900544C34 /* Localizable.xcstrings */; };
 		4C41EE352BC5001900D283BF /* ExtensionValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C41EE2C2BC5001900D283BF /* ExtensionValues.swift */; };
 		4C41EE362BC5001900D283BF /* AutoClicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C41EE2E2BC5001900D283BF /* AutoClicker.swift */; };
 		4C41EE372BC5001900D283BF /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C41EE302BC5001900D283BF /* Settings.swift */; };
 		4C41EE392BC5001900D283BF /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C41EE332BC5001900D283BF /* MenuManager.swift */; };
+		4C64B5732BCFD37400E76AF3 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 4C64B5722BCFD37400E76AF3 /* Sparkle */; };
 		4CAA23692BC2B0F8002D91AE /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 4CAA23682BC2B0F8002D91AE /* KeyboardShortcuts */; };
 		4CAA236B2BC2BCC5002D91AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA236A2BC2BCC5002D91AE /* AppDelegate.swift */; };
+		4CAECF6F2BDF5B14009571C1 /* Alert.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C7EB7062BDE73B6003D2696 /* Alert.mp3 */; };
 		4CDF8E2B2BBBB201009DAE04 /* clakrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF8E2A2BBBB201009DAE04 /* clakrApp.swift */; };
 		4CDF8E2D2BBBB201009DAE04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF8E2C2BBBB201009DAE04 /* ContentView.swift */; };
 		4CDF8E2F2BBBB203009DAE04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDF8E2E2BBBB203009DAE04 /* Assets.xcassets */; };
@@ -20,10 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C2080482BDFBBF9000A312B /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		4C3745732BD4F45900544C34 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		4C41EE2C2BC5001900D283BF /* ExtensionValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionValues.swift; sourceTree = "<group>"; };
 		4C41EE2E2BC5001900D283BF /* AutoClicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoClicker.swift; sourceTree = "<group>"; };
 		4C41EE302BC5001900D283BF /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		4C41EE332BC5001900D283BF /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
+		4C64B5762BCFD3DF00E76AF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4C7EB7062BDE73B6003D2696 /* Alert.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Alert.mp3; sourceTree = "<group>"; };
 		4CAA236A2BC2BCC5002D91AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CDF8E272BBBB201009DAE04 /* clakr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clakr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDF8E2A2BBBB201009DAE04 /* clakrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clakrApp.swift; sourceTree = "<group>"; };
@@ -39,6 +47,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CAA23692BC2B0F8002D91AE /* KeyboardShortcuts in Frameworks */,
+				4C64B5732BCFD37400E76AF3 /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,9 +85,26 @@
 			isa = PBXGroup;
 			children = (
 				4C41EE332BC5001900D283BF /* MenuManager.swift */,
+				4C2080482BDFBBF9000A312B /* AboutView.swift */,
 			);
 			name = "Menu bar";
 			path = "clakr/Menu bar";
+			sourceTree = "<group>";
+		};
+		4C7EB7072BDE73B6003D2696 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				4C7EB7062BDE73B6003D2696 /* Alert.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		4C7EB7082BDE73B6003D2696 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C7EB7072BDE73B6003D2696 /* Sounds */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		4CDF8E1E2BBBB201009DAE04 = {
@@ -104,10 +130,13 @@
 		4CDF8E292BBBB201009DAE04 /* clakr */ = {
 			isa = PBXGroup;
 			children = (
+				4C64B5762BCFD3DF00E76AF3 /* Info.plist */,
+				4C3745732BD4F45900544C34 /* Localizable.xcstrings */,
 				4CAA236A2BC2BCC5002D91AE /* AppDelegate.swift */,
 				4CDF8E2A2BBBB201009DAE04 /* clakrApp.swift */,
 				4CDF8E2C2BBBB201009DAE04 /* ContentView.swift */,
 				4CDF8E2E2BBBB203009DAE04 /* Assets.xcassets */,
+				4C7EB7082BDE73B6003D2696 /* Resources */,
 				4CDF8E332BBBB203009DAE04 /* clakr.entitlements */,
 				4CDF8E302BBBB203009DAE04 /* Preview Content */,
 			);
@@ -140,6 +169,7 @@
 			name = clakr;
 			packageProductDependencies = (
 				4CAA23682BC2B0F8002D91AE /* KeyboardShortcuts */,
+				4C64B5722BCFD37400E76AF3 /* Sparkle */,
 			);
 			productName = clakr;
 			productReference = 4CDF8E272BBBB201009DAE04 /* clakr.app */;
@@ -167,10 +197,15 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
+				ja,
+				ru,
+				"en-AU",
 			);
 			mainGroup = 4CDF8E1E2BBBB201009DAE04;
 			packageReferences = (
 				4CAA23672BC2B0F8002D91AE /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+				4C64B5712BCFD37400E76AF3 /* XCRemoteSwiftPackageReference "Sparkle" */,
 			);
 			productRefGroup = 4CDF8E282BBBB201009DAE04 /* Products */;
 			projectDirPath = "";
@@ -186,7 +221,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CAECF6F2BDF5B14009571C1 /* Alert.mp3 in Resources */,
 				4CDF8E322BBBB203009DAE04 /* Preview Assets.xcassets in Resources */,
+				4C3745742BD4F45900544C34 /* Localizable.xcstrings in Resources */,
 				4CDF8E2F2BBBB203009DAE04 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C2080492BDFBBF9000A312B /* AboutView.swift in Sources */,
 				4C41EE372BC5001900D283BF /* Settings.swift in Sources */,
 				4C41EE362BC5001900D283BF /* AutoClicker.swift in Sources */,
 				4CDF8E2D2BBBB201009DAE04 /* ContentView.swift in Sources */,
@@ -345,13 +383,14 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 431;
+				CURRENT_PROJECT_VERSION = 481;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_ASSET_PATHS = "\"clakr/Preview Content\"";
 				DEVELOPMENT_TEAM = DC484S2P7A;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = clakr/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -359,7 +398,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = kami.dev.clakr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -376,12 +415,13 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 431;
+				CURRENT_PROJECT_VERSION = 481;
 				DEVELOPMENT_ASSET_PATHS = "\"clakr/Preview Content\"";
 				DEVELOPMENT_TEAM = DC484S2P7A;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = clakr/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -389,7 +429,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = kami.dev.clakr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -421,6 +461,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4C64B5712BCFD37400E76AF3 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.0;
+			};
+		};
 		4CAA23672BC2B0F8002D91AE /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
@@ -432,6 +480,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4C64B5722BCFD37400E76AF3 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C64B5712BCFD37400E76AF3 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
 		4CAA23682BC2B0F8002D91AE /* KeyboardShortcuts */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4CAA23672BC2B0F8002D91AE /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;

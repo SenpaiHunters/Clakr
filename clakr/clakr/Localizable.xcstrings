@@ -1,0 +1,2280 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "%@" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        }
+      }
+    },
+    "%llds" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llds"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llds"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llds"
+          }
+        }
+      }
+    },
+    "© %@ Kami" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "© %@ Kami"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "© %@ Kami"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "© %@ Kami"
+          }
+        }
+      }
+    },
+    "About" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "約"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "정보"
+          }
+        }
+      }
+    },
+    "About Clakr" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About Clakr"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clakrについて"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clakr 정보"
+          }
+        }
+      }
+    },
+    "Accessibility Enabled" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accessibility Enabled"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アクセシビリティが有効"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "접근성 활성화"
+          }
+        }
+      }
+    },
+    "Accessibility Permission Required" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accessibily Permissions Required"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アクセシビリティの許可が必要です"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "접근성 권한 필요"
+          }
+        }
+      }
+    },
+    "Accessibility Permissions" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accessibily Permissions"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アクセシビリティ権限"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "접근성 권한"
+          }
+        }
+      }
+    },
+    "Acknowledgements" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acknowledgements"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "謝辞"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "감사의 글"
+          }
+        }
+      }
+    },
+    "Add" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "追加"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "추가"
+          }
+        }
+      }
+    },
+    "ALPHA" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ALPHA"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アルファ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "알파"
+          }
+        }
+      }
+    },
+    "App icon creator" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App icon creator"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリアイコンクリエーター"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "앱 아이콘 생성기"
+          }
+        }
+      }
+    },
+    "App Version" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Version"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリバージョン"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "앱 버전"
+          }
+        }
+      }
+    },
+    "Application" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Application"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリケーション"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "애플리케이션"
+          }
+        }
+      }
+    },
+    "Applications in the exclude list are ignored by Clakr." : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Applications in this exclude list are ignored by Clakr."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "除外リストにあるアプリケーションはClakrによって無視されます。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "제외 목록에 있는 애플리케이션은 Clakr에 의해 무시됩니다."
+          }
+        }
+      }
+    },
+    "Are you sure you want to reset all settings to their default values? This action cannot be undone." : {
+      "comment" : "Factory reset confirmation message",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Are you sure you want to reset all settings to their default values? This action cannot be undone."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべての設定をデフォルト値にリセットしてもよろしいですか？この操作は元に戻せません。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "모든 설정을 기본값으로 재설정하시겠습니까? 이 작업은 취소할 수 없습니다."
+          }
+        }
+      }
+    },
+    "Automatic updates are disabled. You can check for updates manually." : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatically updates are disabled you can check for updates manually."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動更新は無効になっています。手動で更新を確認できます。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "자동 업데이트가 비활성화되었습니다. 수동으로 업데이트를 확인할 수 있습니다."
+          }
+        }
+      }
+    },
+    "Automatically Check for Updates" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatically Check for Updates"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動的に更新をチェックする"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "자동으로 업데이트 확인"
+          }
+        }
+      }
+    },
+    "Blacklist" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blacklist"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ブラックリスト"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "블랙리스트"
+          }
+        }
+      }
+    },
+    "Blacklist Count" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blacklist Count"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ブラックリスト数"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "블랙리스트"
+          }
+        }
+      }
+    },
+    "Blacklisted Applications" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blacklisted Applications"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ブラックリストに登録されたアプリケーション"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "블랙리스트에 등록된 애플리케이션"
+          }
+        }
+      }
+    },
+    "Build Version" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Build Version"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ビルドバージョン"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "빌드 버전"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "キャンセル"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "취소"
+          }
+        }
+      }
+    },
+    "Check for Updates Now..." : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Check for Updates Now..."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今すぐ更新を確認..."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "지금 업데이트 확인..."
+          }
+        }
+      }
+    },
+    "Check for Updates..." : {
+      "comment" : "Menu item title for checking updates",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Check for Updates..."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新を確認..."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "업데이트 확인..."
+          }
+        }
+      }
+    },
+    "Clakr" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clakr"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clakr"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clakr"
+          }
+        }
+      }
+    },
+    "Clakr Help" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clakr Help"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clakrヘルプ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clakr 도움말"
+          }
+        }
+      }
+    },
+    "Clakr is a simple, lightweight auto-clicker designed for macOS. It can be used as a menu bar app, or a standalone app, with optional sound effects when the clicker starts." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clakr is a simple, lightweight auto-clicker\ndesigned for macOS. It can be used as a menu bar app, or a standalone app, with optional sound effects when the clicker starts."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ClakrはmacOS用に設計されたシンプルで軽量なオートクリッカーです。メニューバーアプリとして、またはスタンドアロンアプリとして使用でき、クリッカーが開始するときのオプションのサウンドエフェクトがあります。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clakr은 macOS용으로 설계된 간단하고 가벼운 자동 클리커입니다. 메뉴 바 앱 또는 독립 실행형 앱으로 사용할 수 있으며, 클리커가 시작될 때 선택적인 사운드 효과를 제공합니다."
+          }
+        }
+      }
+    },
+    "Clakr is entirely open-sourced, ensuring user and transparency and an up-to-date, free, and fast auto-clicker." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clakr is entirely open-sourced, ensuring user and transparency and an up-to-date, free, and fast auto-clicker."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clakrは完全にオープンソースで、ユーザーの透明性を保証し、最新で無料、そして高速なオートクリッカーを提供します。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clakr은 완전히 오픈 소스로, 사용자의 투명성을 보장하며 최신, 무료, 빠른 자동 클리커를 제공합니다."
+          }
+        }
+      }
+    },
+    "Clicks per second:" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clicks per second:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1秒あたりのクリック数:"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "초당 클릭 수:"
+          }
+        }
+      }
+    },
+    "Confirm Factory Reset" : {
+      "comment" : "Title for factory reset confirmation alert",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirm Factory Reset"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "工場出荷時設定へのリセットを確認"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "공장 초기화 확인"
+          }
+        }
+      }
+    },
+    "Copy Debug Info" : {
+      "comment" : "Copy debug information to clipboard",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copy Debug Info"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "デバッグ情報をコピー"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "디버그 정보 복사"
+          }
+        }
+      }
+    },
+    "Copy Version" : {
+
+    },
+    "Copy version to clipboard" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copy version to clipboard"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バージョンをクリップボードにコピー"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "버전을 클립보드에 복사"
+          }
+        }
+      }
+    },
+    "Custom Sounds" : {
+      "comment" : "Title for custom sounds section",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Custom Sounds"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カスタムサウンド"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사용자 지정 사운드"
+          }
+        }
+      }
+    },
+    "Debug" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Debug"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "デバッグ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "디버그"
+          }
+        }
+      }
+    },
+    "Debug Information" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Debug Information"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "デバッグ情報"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "디버그 정보"
+          }
+        }
+      }
+    },
+    "Denied" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denied"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "拒否された"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "거부됨"
+          }
+        }
+      }
+    },
+    "Enable Sound Effects" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enable Sound Effects"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "サウンドエフェクトを有効にする"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사운드 효과 활성화"
+          }
+        }
+      }
+    },
+    "Excluded Applications" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Excluded Applications"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "除外されたアプリケーション"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "제외된 애플리케이션"
+          }
+        }
+      }
+    },
+    "Excluded Apps" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Excluded Apps"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "除外されたアプリ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "제외된 앱"
+          }
+        }
+      }
+    },
+    "Factory Reset" : {
+      "comment" : "Factory reset the application",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Factory Reset"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "工場出荷時設定のリセット"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "공장 초기화"
+          }
+        }
+      }
+    },
+    "General" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "General"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一般"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "일반"
+          }
+        }
+      }
+    },
+    "GPLv3 License" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GPLv3 License"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GPLv3ライセンス"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GPLv3 라이선스"
+          }
+        }
+      }
+    },
+    "Granted" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Granted"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "許可された"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "허용됨"
+          }
+        }
+      }
+    },
+    "Help" : {
+      "comment" : "Help menu title\n   Main menu Help title",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Help"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ヘルプ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도움말"
+          }
+        }
+      }
+    },
+    "Hide Dock Icon" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hide Dock Icon"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ドックアイコンを隠す"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도크 아이콘 숨기기"
+          }
+        }
+      }
+    },
+    "Hotkeys" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hotkeys"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホットキー"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "단축키"
+          }
+        }
+      }
+    },
+    "Import Sound" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Import Sound"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "サウンドをインポート"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사운드 가져오기"
+          }
+        }
+      }
+    },
+    "Imported Sounds" : {
+      "comment" : "Title for imported sounds section",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Imported Sounds"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "インポートされたサウンド"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "가져온 사운드"
+          }
+        }
+      }
+    },
+    "KawaiiFumiko002" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "KawaiiFumiko002"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "KawaiiFumiko002"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "KawaiiFumiko002"
+          }
+        }
+      }
+    },
+    "KeyboardShortcuts library" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "KeyboardShortcuts library"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "キーボードショートカットライブラリ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "키보드 단축키 라이브러리"
+          }
+        }
+      }
+    },
+    "Licensed under the GNU General Public License v3.0" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Licensed under the GNU General Public License v3.0"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GNU一般公衆利用許諾契約書v3.0の下でライセンスされています"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GNU 일반 공중 사용 허가서 v3.0에 따라 라이선스됨"
+          }
+        }
+      }
+    },
+    "macOS Version" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "macOS Version"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "macOSバージョン"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "macOS 버전"
+          }
+        }
+      }
+    },
+    "Main Run Loop Active" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Main Run Loop Active"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メインランループアクティブ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "메인 실행 루프 활성"
+          }
+        }
+      }
+    },
+    "Menu Bar Mode" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menu Bar Mode"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メニューバーモード"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "메뉴 바 모드"
+          }
+        }
+      }
+    },
+    "No" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "いいえ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "아니오"
+          }
+        }
+      }
+    },
+    "No Excluded Applications. Press '+' to add an application." : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Excluded Applications. Press `+` to add an application."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "除外されたアプリケーションはありません。'+'を押してアプリケーションを追加してください。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "제외된 애플리케이션이 없습니다. 애플리케이션을 추가하려면 '+'를 누르세요."
+          }
+        }
+      }
+    },
+    "OK" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "확인"
+          }
+        }
+      }
+    },
+    "Open License" : {
+      "comment" : "Accessibility label for opening license button"
+    },
+    "Open Link" : {
+      "comment" : "Accessibility label for opening link button"
+    },
+    "Open Settings" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open Settings"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定を開く"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "설정 열기"
+          }
+        }
+      }
+    },
+    "Open System Preferences" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open System Preferences"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "システム環境設定を開く"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "시스템 환경설정 열기"
+          }
+        }
+      }
+    },
+    "Play Sound Effects" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Play Sound Effects"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "サウンドエフェクトを再生"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사운드 효과 재생"
+          }
+        }
+      }
+    },
+    "Please be aware that by using Clakr, you accept full responsibility for any consequences, such as bans or penalties from software or services that prohibit the use of auto-clickers." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please be aware that by using Clakr, you accept a full responsibility for any consequences, such as bans or penalties from software or services that prohibit the use of auto-clickers."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clakrを使用することで、オートクリッカーの使用を禁止するソフトウェアやサービスからの禁止や罰則など、あらゆる結果に対する全責任を受け入れることになりますのでご注意ください。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clakr 사용으로 인한 모든 결과, 예를 들어 자동 클리커 사용을 금지하는 소프트웨어나 서비스로부터의 금지나 벌금 등에 대한 책임을 전적으로 인정해야 합니다."
+          }
+        }
+      }
+    },
+    "Please grant accessibility permissions for clakr to function properly. This is needed to simulate mouse clicks." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please grant accessibility for clakr to function properly. This is needed to stimulate mouse clicks."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "clakrが正しく機能するためには、アクセシビリティの許可を与えてください。これはマウスクリックをシミュレートするために必要です。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "clakr이 제대로 기능하려면 접근성 권한을 부여해 주세요. 이는 마우스 클릭을 시뮬레이션하기 위해 필요합니다."
+          }
+        }
+      }
+    },
+    "Privacy Policy" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacy Policy"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プライバシーポリシー"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "개인정보 처리방침"
+          }
+        }
+      }
+    },
+    "Provide Feedback" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Provide Feedback"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フィードバックを提供"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "피드백 제공"
+          }
+        }
+      }
+    },
+    "Quit" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quit"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "終了"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "종료"
+          }
+        }
+      }
+    },
+    "Quit Clakr" : {
+      "comment" : "App menu item for Quit Clakr",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quit Clakr"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clakrを終了"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clakr 종료"
+          }
+        }
+      }
+    },
+    "Reduced Transparency" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reduced Transparency"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "透明度を下げる"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "투명도 감소"
+          }
+        }
+      }
+    },
+    "Remove" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "削除"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "제거"
+          }
+        }
+      }
+    },
+    "Reset" : {
+      "comment" : "Reset button",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reset"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "リセット"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "재설정"
+          }
+        }
+      }
+    },
+    "Reset Accessibility Permissions" : {
+      "comment" : "Reset accessibility permissions",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reset Accessibility Permissions"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アクセシビリティ権限をリセット"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "접근성 권한 재설정"
+          }
+        }
+      }
+    },
+    "Select Sound:" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select Sound:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"サウンドを選択:"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "소리 선택:"
+          }
+        }
+      }
+    },
+    "Services" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Services"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "サービス"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "서비스"
+          }
+        }
+      }
+    },
+    "Set a keyboard shortcut to toggle the auto clicker" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Set a keyboard shortcut to toggle the auto clicker"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オートクリッカーを切り替えるためのキーボードショートカットを設定"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "자동 클리커를 전환할 키보드 단축키 설정"
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "comment" : "App menu item for Settings",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "설정"
+          }
+        }
+      }
+    },
+    "Sindre Sorhus" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sindre Sorhus"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "シンドレ・ソーハス"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "신드레 소루스"
+          }
+        }
+      }
+    },
+    "Sound" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sound"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "サウンド"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "소리"
+          }
+        }
+      }
+    },
+    "Sound Duration Warning" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sound Duration Warning"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "サウンドの持続時間の警告"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사운드 지속 시간 경고"
+          }
+        }
+      }
+    },
+    "Sound effects are disabled." : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sound effects are disabled."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "サウンドエフェクトが無効です"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사운드 효과가 비활성화됨"
+          }
+        }
+      }
+    },
+    "Sparkle" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sparkle"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スパークル\""
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "스파클"
+          }
+        }
+      }
+    },
+    "Sparkle Project" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sparkle Project"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スパークルプロジェクト"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "스파클 프로젝트"
+          }
+        }
+      }
+    },
+    "Start" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開始"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "클릭"
+          }
+        }
+      }
+    },
+    "Start after (seconds):" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start after (seconds):"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開始までの時間（秒）:"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "시작 대기 시간(초):"
+          }
+        }
+      }
+    },
+    "Start clicking" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stop clicking"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "クリックを開始"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "클릭 시작"
+          }
+        }
+      }
+    },
+    "Stationary for (seconds):" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stationary for (seconds):"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停止時間（秒）:"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "정지 상태 유지 시간(초):"
+          }
+        }
+      }
+    },
+    "Stop" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stop"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停止"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "클릭"
+          }
+        }
+      }
+    },
+    "Stop after (seconds):" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stop after (seconds)"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停止までの時間（秒）:"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "정지 대기 시간(초):"
+          }
+        }
+      }
+    },
+    "Stop clicking" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stop Clicking"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "クリックを停止"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "클릭 중지"
+          }
+        }
+      }
+    },
+    "Support Clakr's development" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Support Clakr's development"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clakrの開発を支援する"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clakr의 개발 지원"
+          }
+        }
+      }
+    },
+    "System Sounds" : {
+      "comment" : "Title for system sounds section",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "System Sounds"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "システム音"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "시스템 사운드"
+          }
+        }
+      }
+    },
+    "The selected sound exceeds the recommended maximum duration of 3 seconds. Please be mindful as long playtimes can overlap and may affect performance" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The selected sound exceeds the recommended maximum duration of 3 seconds. Please be mindful as long playtimes can overlap and may affect performance"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選択されたサウンドは推奨される最大持続時間3秒を超えています。長い再生時間は重なり合う可能性があり、パフォーマンスに影響を与える可能性があるため、注意してください。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "선택한 사운드가 권장 최대 지속 시간 3초를 초과합니다. 재생 시간이 겹칠 수 있으며 성능에 영향을 줄 수 있으므로 주의하십시오."
+          }
+        }
+      }
+    },
+    "Toggle Auto Clicker:" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toggle Auto Clicker:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オートクリッカーの切り替え:"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "자동 클리커 전환:"
+          }
+        }
+      }
+    },
+    "Toggles the auto-clicker on or off" : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toggles the auto-clicker on or off"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オートクリッカーをオンまたはオフに切り替えます"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "자동 클리커를 켜거나 끕니다"
+          }
+        }
+      }
+    },
+    "Unknown" : {
+      "comment" : "Fallback text when version/build number is unavailable",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unknown"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不明"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "알 수 없음"
+          }
+        }
+      }
+    },
+    "Version: %@ (%@)" : {
+      "comment" : "Version and build number display format",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Version: %1$@ (%2$@)"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version: %1$@ (%2$@)"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バージョン: %1$@ (%2$@)"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " 버전: %1$@ (%2$@)"
+          }
+        }
+      }
+    },
+    "Visit Website" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visit Website"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ウェブサイトを訪問"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "웹사이트 방문"
+          }
+        }
+      }
+    },
+    "Yes" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yes"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "はい"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "예"
+          }
+        }
+      }
+    },
+    "Your app is set to automatically check for updates." : {
+      "localizations" : {
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your app is set to automatically check for updates."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリは自動的に更新をチェックするように設定されています。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "앱이 업데이트를 자동으로 확인하도록 설정되었습니다."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

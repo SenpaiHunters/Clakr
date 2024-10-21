@@ -10,21 +10,17 @@ import SwiftUI
 
 @main
 struct clakrApp: App {
-  @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-  @State private var showingSettings = false
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @State private var showingSettings = false
 
-  var body: some Scene {
-    WindowGroup {
-      ContentView()
-        .sheet(isPresented: $showingSettings) {
-          SettingsView(autoClicker: AutoClicker())
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
         }
+        Settings {
+            SettingsView(autoClicker: AutoClicker())
+        }
+        .windowStyle(HiddenTitleBarWindowStyle())
+        .windowToolbarStyle(UnifiedCompactWindowToolbarStyle())
     }
-    .windowStyle(HiddenTitleBarWindowStyle())
-    .windowToolbarStyle(UnifiedCompactWindowToolbarStyle())
-  }
-
-  private func toggleSettings() {
-    showingSettings.toggle()
-  }
 }

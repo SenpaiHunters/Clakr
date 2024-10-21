@@ -28,4 +28,4 @@ We may update this Privacy Policy from time to time. The most current version of
 
 ## Contact Us
 
-If you have any questions about this Privacy Policy, please contact us via email at kamibusinessinquirers@gmail.com or via Discord at [https://discord.com/users/325178652033679362](https://discord.com/users/325178652033679362).
+If you have any questions about this Privacy Policy, please contact us via email at <kamibusinessinquirers@gmail.com> or via Discord at [https://discord.com/users/325178652033679362](https://discord.com/users/325178652033679362).

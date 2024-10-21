@@ -102,6 +102,9 @@
         }
       }
     },
+    "© %lld Kami" : {
+
+    },
     "About" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -377,6 +380,7 @@
     },
     "Are you sure you want to reset all settings to their default values? This action cannot be undone." : {
       "comment" : "Factory reset confirmation message",
+      "extractionState" : "stale",
       "localizations" : {
         "en-AU" : {
           "stringUnit" : {
@@ -399,6 +403,7 @@
       }
     },
     "Automatic updates are disabled. You can check for updates manually." : {
+      "extractionState" : "stale",
       "localizations" : {
         "en-AU" : {
           "stringUnit" : {
@@ -421,6 +426,7 @@
       }
     },
     "Automatically Check for Updates" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en-AU" : {
           "stringUnit" : {
@@ -557,6 +563,7 @@
       }
     },
     "Check for Updates Now..." : {
+      "extractionState" : "stale",
       "localizations" : {
         "en-AU" : {
           "stringUnit" : {
@@ -580,6 +587,7 @@
     },
     "Check for Updates..." : {
       "comment" : "Menu item title for checking updates",
+      "extractionState" : "stale",
       "localizations" : {
         "en-AU" : {
           "stringUnit" : {
@@ -717,6 +725,7 @@
     },
     "Confirm Factory Reset" : {
       "comment" : "Title for factory reset confirmation alert",
+      "extractionState" : "stale",
       "localizations" : {
         "en-AU" : {
           "stringUnit" : {
@@ -740,6 +749,7 @@
     },
     "Copy Debug Info" : {
       "comment" : "Copy debug information to clipboard",
+      "extractionState" : "stale",
       "localizations" : {
         "en-AU" : {
           "stringUnit" : {
@@ -789,6 +799,7 @@
     },
     "Custom Sounds" : {
       "comment" : "Title for custom sounds section",
+      "extractionState" : "stale",
       "localizations" : {
         "en-AU" : {
           "stringUnit" : {
@@ -948,6 +959,7 @@
     },
     "Factory Reset" : {
       "comment" : "Factory reset the application",
+      "extractionState" : "stale",
       "localizations" : {
         "en-AU" : {
           "stringUnit" : {
@@ -1039,7 +1051,8 @@
       }
     },
     "Help" : {
-      "comment" : "Help menu title\n   Main menu Help title",
+      "comment" : "Help menu title\nMain menu Help title",
+      "extractionState" : "stale",
       "localizations" : {
         "en-AU" : {
           "stringUnit" : {
@@ -1355,12 +1368,6 @@
         }
       }
     },
-    "Open License" : {
-      "comment" : "Accessibility label for opening license button"
-    },
-    "Open Link" : {
-      "comment" : "Accessibility label for opening link button"
-    },
     "Open Settings" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1547,6 +1554,7 @@
     },
     "Quit Clakr" : {
       "comment" : "App menu item for Quit Clakr",
+      "extractionState" : "stale",
       "localizations" : {
         "en-AU" : {
           "stringUnit" : {
@@ -1569,6 +1577,7 @@
       }
     },
     "Reduced Transparency" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en-AU" : {
           "stringUnit" : {
@@ -1614,6 +1623,7 @@
     },
     "Reset" : {
       "comment" : "Reset button",
+      "extractionState" : "stale",
       "localizations" : {
         "en-AU" : {
           "stringUnit" : {
@@ -1637,6 +1647,7 @@
     },
     "Reset Accessibility Permissions" : {
       "comment" : "Reset accessibility permissions",
+      "extractionState" : "stale",
       "localizations" : {
         "en-AU" : {
           "stringUnit" : {
@@ -2066,6 +2077,7 @@
     },
     "System Sounds" : {
       "comment" : "Title for system sounds section",
+      "extractionState" : "stale",
       "localizations" : {
         "en-AU" : {
           "stringUnit" : {
@@ -2088,6 +2100,7 @@
       }
     },
     "The selected sound exceeds the recommended maximum duration of 3 seconds. Please be mindful as long playtimes can overlap and may affect performance" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en-AU" : {
           "stringUnit" : {
@@ -2177,6 +2190,16 @@
         }
       }
     },
+    "Version %@ (%@)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Version %1$@ (%2$@)"
+          }
+        }
+      }
+    },
     "Version: %@ (%@)" : {
       "comment" : "Version and build number display format",
       "extractionState" : "stale",
@@ -2254,6 +2277,7 @@
       }
     },
     "Your app is set to automatically check for updates." : {
+      "extractionState" : "stale",
       "localizations" : {
         "en-AU" : {
           "stringUnit" : {

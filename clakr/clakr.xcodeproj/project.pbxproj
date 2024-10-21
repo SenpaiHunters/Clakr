@@ -13,7 +13,6 @@
 		4C41EE362BC5001900D283BF /* AutoClicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C41EE2E2BC5001900D283BF /* AutoClicker.swift */; };
 		4C41EE372BC5001900D283BF /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C41EE302BC5001900D283BF /* Settings.swift */; };
 		4C41EE392BC5001900D283BF /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C41EE332BC5001900D283BF /* MenuManager.swift */; };
-		4C64B5732BCFD37400E76AF3 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 4C64B5722BCFD37400E76AF3 /* Sparkle */; };
 		4CAA23692BC2B0F8002D91AE /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 4CAA23682BC2B0F8002D91AE /* KeyboardShortcuts */; };
 		4CAA236B2BC2BCC5002D91AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA236A2BC2BCC5002D91AE /* AppDelegate.swift */; };
 		4CAECF6F2BDF5B14009571C1 /* Alert.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C7EB7062BDE73B6003D2696 /* Alert.mp3 */; };
@@ -47,7 +46,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CAA23692BC2B0F8002D91AE /* KeyboardShortcuts in Frameworks */,
-				4C64B5732BCFD37400E76AF3 /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,8 +57,7 @@
 			children = (
 				4C41EE2C2BC5001900D283BF /* ExtensionValues.swift */,
 			);
-			name = Extensions;
-			path = clakr/Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		4C41EE2F2BC5001900D283BF /* Main */ = {
@@ -68,8 +65,7 @@
 			children = (
 				4C41EE2E2BC5001900D283BF /* AutoClicker.swift */,
 			);
-			name = Main;
-			path = clakr/Main;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		4C41EE312BC5001900D283BF /* Settings */ = {
@@ -77,8 +73,7 @@
 			children = (
 				4C41EE302BC5001900D283BF /* Settings.swift */,
 			);
-			name = Settings;
-			path = clakr/Settings;
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		4C41EE342BC5001900D283BF /* Menu bar */ = {
@@ -87,8 +82,7 @@
 				4C41EE332BC5001900D283BF /* MenuManager.swift */,
 				4C2080482BDFBBF9000A312B /* AboutView.swift */,
 			);
-			name = "Menu bar";
-			path = "clakr/Menu bar";
+			path = "Menu bar";
 			sourceTree = "<group>";
 		};
 		4C7EB7072BDE73B6003D2696 /* Sounds */ = {
@@ -110,10 +104,6 @@
 		4CDF8E1E2BBBB201009DAE04 = {
 			isa = PBXGroup;
 			children = (
-				4C41EE2D2BC5001900D283BF /* Extensions */,
-				4C41EE2F2BC5001900D283BF /* Main */,
-				4C41EE342BC5001900D283BF /* Menu bar */,
-				4C41EE312BC5001900D283BF /* Settings */,
 				4CDF8E292BBBB201009DAE04 /* clakr */,
 				4CDF8E282BBBB201009DAE04 /* Products */,
 			);
@@ -130,6 +120,10 @@
 		4CDF8E292BBBB201009DAE04 /* clakr */ = {
 			isa = PBXGroup;
 			children = (
+				4C41EE2D2BC5001900D283BF /* Extensions */,
+				4C41EE2F2BC5001900D283BF /* Main */,
+				4C41EE342BC5001900D283BF /* Menu bar */,
+				4C41EE312BC5001900D283BF /* Settings */,
 				4C64B5762BCFD3DF00E76AF3 /* Info.plist */,
 				4C3745732BD4F45900544C34 /* Localizable.xcstrings */,
 				4CAA236A2BC2BCC5002D91AE /* AppDelegate.swift */,
@@ -158,6 +152,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CDF8E362BBBB203009DAE04 /* Build configuration list for PBXNativeTarget "clakr" */;
 			buildPhases = (
+				4C7804D62CC5F911007C99E9 /* Run SwiftFormat */,
 				4CDF8E232BBBB201009DAE04 /* Sources */,
 				4CDF8E242BBBB201009DAE04 /* Frameworks */,
 				4CDF8E252BBBB201009DAE04 /* Resources */,
@@ -169,7 +164,6 @@
 			name = clakr;
 			packageProductDependencies = (
 				4CAA23682BC2B0F8002D91AE /* KeyboardShortcuts */,
-				4C64B5722BCFD37400E76AF3 /* Sparkle */,
 			);
 			productName = clakr;
 			productReference = 4CDF8E272BBBB201009DAE04 /* clakr.app */;
@@ -205,7 +199,6 @@
 			mainGroup = 4CDF8E1E2BBBB201009DAE04;
 			packageReferences = (
 				4CAA23672BC2B0F8002D91AE /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
-				4C64B5712BCFD37400E76AF3 /* XCRemoteSwiftPackageReference "Sparkle" */,
 			);
 			productRefGroup = 4CDF8E282BBBB201009DAE04 /* Products */;
 			projectDirPath = "";
@@ -229,6 +222,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C7804D62CC5F911007C99E9 /* Run SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftFormat";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Default Homebrew installation path on Intel-based Macs\nHOMEBREW_INTEL_PATH=\"/usr/local/bin/swiftformat\"\n\n# Default Homebrew installation path on Apple Silicon Macs\nHOMEBREW_ARM_PATH=\"/opt/homebrew/bin/swiftformat\"\n\n# Determine the architecture of the machine (arm64 or x86_64)\nARCH=$(uname -m)\n\n# Set the Homebrew path based on the architecture\nif [ \"$ARCH\" = \"arm64\" ]; then\n    SWIFTFORMAT_PATH=\"$HOMEBREW_ARM_PATH\"\nelse\n    SWIFTFORMAT_PATH=\"$HOMEBREW_INTEL_PATH\"\nfi\n\n# Check if SwiftFormat is installed via Homebrew\nif [ -x \"$SWIFTFORMAT_PATH\" ]; then\n    \"$SWIFTFORMAT_PATH\" .\nelse\n    echo \"warning: SwiftFormat not installed via Homebrew or not found in expected paths\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4CDF8E232BBBB201009DAE04 /* Sources */ = {
@@ -289,7 +304,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -355,7 +370,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -383,7 +398,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 481;
+				CURRENT_PROJECT_VERSION = 562;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_ASSET_PATHS = "\"clakr/Preview Content\"";
 				DEVELOPMENT_TEAM = DC484S2P7A;
@@ -398,7 +413,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = kami.dev.clakr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -415,7 +430,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 481;
+				CURRENT_PROJECT_VERSION = 562;
 				DEVELOPMENT_ASSET_PATHS = "\"clakr/Preview Content\"";
 				DEVELOPMENT_TEAM = DC484S2P7A;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -429,7 +444,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = kami.dev.clakr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -461,14 +476,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4C64B5712BCFD37400E76AF3 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sparkle-project/Sparkle";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.6.0;
-			};
-		};
 		4CAA23672BC2B0F8002D91AE /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
@@ -480,11 +487,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4C64B5722BCFD37400E76AF3 /* Sparkle */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4C64B5712BCFD37400E76AF3 /* XCRemoteSwiftPackageReference "Sparkle" */;
-			productName = Sparkle;
-		};
 		4CAA23682BC2B0F8002D91AE /* KeyboardShortcuts */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4CAA23672BC2B0F8002D91AE /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;

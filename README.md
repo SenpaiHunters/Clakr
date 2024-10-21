@@ -153,8 +153,6 @@ This project is licensed under the GNU GPLv3 license. See the [LICENSE](LICENSE.
 - [Sindre Sorhus](https://github.com/sindresorhus)
   - [Keyboard Shortcuts](https://github.com/sindresorhus/KeyboardShortcuts)
 
-- [Sparkle](https://github.com/sparkle-project/Sparkle)
-
 ## Explore More
 
 - [Autoclicking Test Site](https://clakr-delta.vercel.app/)
@@ -193,7 +191,7 @@ This project is licensed under the GNU GPLv3 license. See the [LICENSE](LICENSE.
   - A: Who knows! Maybe, even I don't know!
 
 - **Q: Does Clakr track me?**
-  - A: Clakr does not track your activities. In version 1.1 (481), we introduced auto-updating, which pings `senpaihunters.github.io`, our update domain. If you're concerned about privacy, you can block this domain using tools like LuLu or Little Snitch, or by adjusting your DNS settings. However, blocking the domain means you'll need to manually check for and install future updates. Alternatively, you can disable auto-updating in the app's settings, which will prevent the app from making update requests, offering a similar outcome to using a network blocking tool. As always, you are welcome to inspect our code.
+  - A: Not at all, it does not even connect to the internet and is completely open-source and sandboxed.
 
 </details>
 
